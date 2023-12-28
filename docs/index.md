@@ -26,7 +26,7 @@
         What is a computational problem?  Express a step-by-step solution to a computational problem with a flowchart. 
         [:octicons-arrow-right-24:](notes/02-algo.md)
 
-    - __3. Functions__
+   - __3. Functions__
 
         Write functions that solve simpler sub-problems and then combine the functions to solve higher-level and more complex problems.
         [:octicons-arrow-right-24:](notes/03-func.md)
@@ -40,7 +40,7 @@
 
 
     ## Basic C
-    <div class="grid cards" markdown>
+   <div class="grid cards" markdown>
 
     - __5. First C Program__
 
@@ -58,7 +58,7 @@
         [:octicons-arrow-right-24:](notes/07-arithmetic-ops.md)
 
     </div>
-
+<!--
     ## Control Statements
     <div class="grid cards" markdown>
 
@@ -180,7 +180,7 @@
         Use `printf` and `scanf` and their pitfalls
         [:octicons-arrow-right-24:](notes/27-stdio.md)
     </div>
-
+-->
 === ":fontawesome-solid-person-chalkboard: Lab Guide"
 
     ## CS1010 PE
@@ -285,22 +285,3 @@
 
 
     </div>
-
-=== ":fontawesome-solid-keyboard: Programming Exercises"
-
-    ## Exercise 0
-
-    #### Week 3
-    
-    - [Questions](exercises/ex00.md)
-    - [Accept Link](https://classroom.github.com/a/gkcRzoOm)
-
-    | | Question | I/O     | Types            | Arithmetic | Function |  Difficulty |
-    --|---------|----------|------------------|------------|----------|-------------|
-    1 | [Echo](#question-1-echo)     | :material-check: | :material-check: |                    | | |
-    2 | [Divide](#question-2-divide) | :material-check: | :material-check: | :material-check:   | | :material-star-half:    |
-    3 | [Ones](#question-3-ones)     | :material-check: | :material-check: | :material-check:   | | :material-star-half:  |
-    4 | [BMI](#question-4-bmi)       | :material-check: | :material-check: | :material-check:   | :material-check: | :material-star:      |
-    5 | [Quadratic](#question-5-quadratic) | :material-check: | :material-check: | :material-check: | :material-check: | :material-star:       |
-    6 | [Cuboid](#question-6-cuboid) | :material-check: | :material-check: | :material-check:   | :material-check: | :material-star: :material-star-half:  |
-
