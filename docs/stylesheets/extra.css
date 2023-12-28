@@ -94,8 +94,8 @@ s {
 	vertical-align: baseline;
 }
 
-[data-md-color-scheme="cs1010ay2324s1"] {
-  --md-primary-fg-color:        #005dd5;
-  --md-primary-fg-color--light: #005dd5;
-  --md-primary-fg-color--dark:  #005dd5;
+[data-md-color-scheme="cs1010ay2324s2"] {
+  --md-primary-fg-color:        #add8b6;
+  --md-primary-fg-color--light: #add8b6;
+  --md-primary-fg-color--dark:  #add8b6;
 }

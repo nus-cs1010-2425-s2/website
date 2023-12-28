@@ -86,16 +86,16 @@ theme:
     - search.share
 
   palette:
-    primary: cs1010ay2324s1
-    accent: cs1010ay2324s1
+    primary: cs1010ay2324s2
+    accent: cs1010ay2324s2
   shortcuts:
     previous: 72 #h
     next: 76 #l
     search: 191 #/
 
 site_name: CS1010 Programming Methodology
-# repo_url: https://github.com/nus-cs1010/1819-s1
-site_url: https://nus-cs1010.github.io/2324-s1
+# repo_url: https://github.com/nus-cs1010-2324-s2/website
+site_url: https://nus-cs1010-2324-s2.github.io/
 copyright: Copyright by Department of Computer Science, National University of Singapore 2023
 # remote_branch: gh-pages
 use_directory_urls: false
