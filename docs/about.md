@@ -33,7 +33,6 @@ After taking CS1010, students should
 
 -   20 February 2024, Tuesday: Practical Exam 0 (6 - 9 PM)
 -   5 March 2024, Tuesday: Midterm Test (10 AM - 12 PM)
--   5 March 2024, Tuesday: Midterm Test (10 AM - 12 PM)
 -   19 March 2024, Tuesday: Practical Exam 1 (6 - 9 PM)
 -   9 April 2024, Tuesday: Practical Exam 2 (6 - 9 PM)
 -   30 April 2024, Tuesday: Final Exam (1 - 3 PM)
@@ -74,7 +73,7 @@ The summative assessments, on the other hand, are meant to evaluate student lear
 
 -   **Problem Sets**: At the end of some lesson units, we will provide some exercise questions to make students reflect and practice applying what they have learned in the corresponding unit. These questions are not graded. There is no need to submit answers for grading. They will be discussed and presented during the tutorial sessions.
 -   {++**Past Year Test Papers**++}: Past year test papers are made available for practice.  These are not graded.  There is no need to submit answers for grading.  Selected questions may be discussed during class.  They can be discussed on Piazza.
--   **Quizzes**: The online quizzes are released every week after the lecture (Monday, 6 PM) and are due two days later (Wednesday, 11:59 PM). The quizzes are more tightly coupled to the content of the weekly lectures and are meant to help students self-diagnose their understanding of what is taught for that week.  {++You may attempt the quizzes an unlimited number of times.  We will consider only your highest score.++}
+-   **Quizzes**: The online quizzes are released every week after the lecture (Tuesday, 2 PM) and are due one week later. The quizzes are more tightly coupled to the content of the weekly lectures and are meant to help students self-diagnose their understanding of what is taught for that week.  {++You may attempt the quizzes an unlimited number of times.  We will consider only your highest score.++}
 -   **Programming Exercises**: These are programming questions of various difficulty levels that are critical for students to solve, to gain experience, skills, and confidence in solving computational problems with C. Typically students spend more than half of their time in CS1010 on solving these programming exercises. Students should submit them on time to get feedback from their lab tutors.
 -   **Practical Exams**: Students will be given programming questions to solve within a limited time frame, in an examination setting in SoC computer labs.  This is usually held in the evening or on a Saturday.
 -   **Midterm and Final Exams** are written tests (on pen and paper) conducted in exam halls.
@@ -152,7 +151,7 @@ Please note that the following are not handled by the CS1010 teaching team.  We 
 ## Communication Policy
 
 -   Piazza is the preferred platform if you have questions to ask or issues to raise (either publicly to your classmates or privately to the instructors)
--   If you must use email, please send it to the email address cs1010@comp.nus.edu.sg.  This is a large course managed by a team.  Doing so would ensure that your email receives the right attention and is handled by the right member of the team.  Emailing individual instructors may cause a delay in response (if the email is not lost).
+-   If you must use email, please send it to the email address zhaojin@comp.nus.edu.sg. 
 -   Only email a specific individual instructor or message the instructor using Canvas if you have matters that are personal and private.
 -   Prefix your email subject with [CS1010]
 -   Use only your official NUS email for communication with the teaching staff -- either the one with @u.nus.edu or @comp.nus.edu.sg.

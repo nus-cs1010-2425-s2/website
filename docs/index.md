@@ -1,4 +1,4 @@
-# NUS CS1010 Handbook for AY23/24 Semester 1
+# NUS CS1010 Handbook for AY23/24 Semester 2
 
 #
 
@@ -38,7 +38,7 @@
 
     </div>
 
-
+<!--
     ## Basic C
    <div class="grid cards" markdown>
 
@@ -58,6 +58,7 @@
         [:octicons-arrow-right-24:](notes/07-arithmetic-ops.md)
 
     </div>
+-->
 <!--
     ## Control Statements
     <div class="grid cards" markdown>

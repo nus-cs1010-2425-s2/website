@@ -9,9 +9,9 @@ nav:
     - 2. Computational Problems: "notes/02-algo.md"
     - 3. Functions: "notes/03-func.md"
     - 4. Types: "notes/04-type.md"
-    - 5. First C Program: "notes/05-first-c.md"
-    - 6. CS1010 I/O: "notes/06-cs1010-io.md"
-    - 7. Arithmetic Operations: "notes/07-arithmetic-ops.md"
+ #   - 5. First C Program: "notes/05-first-c.md"
+ #   - 6. CS1010 I/O: "notes/06-cs1010-io.md"
+ #   - 7. Arithmetic Operations: "notes/07-arithmetic-ops.md"
  #   - 8. Conditional Statement: "notes/08-if-else.md"
  #   - 9. Logical Expression: "notes/09-logical-exp.md"
  #   - 10. Assertion: "notes/10-assert.md"
@@ -56,7 +56,7 @@ nav:
       - Compiling with Clang: 'guides/clang.md'
   - Exercises: 
       - Guide to Exercises: "guides/exercises.md"
-      - 0. I/O, Types, and Arithmetic: 'exercises/ex00.md'
+ #     - 0. I/O, Types, and Arithmetic: 'exercises/ex00.md'
  #     - 1. Conditionals: 'exercises/ex01.md'
  #     - 2. Loops: 'exercises/ex02.md'
  #     - 3. Fixed-Length Arrays: 'exercises/ex03.md'

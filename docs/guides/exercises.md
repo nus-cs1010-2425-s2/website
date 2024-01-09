@@ -2,7 +2,7 @@
 
 Programming cannot be "studied".  Students must practice what they learn, through solving programming problems, to attain the skills of computational problem-solving in C.
 
-CS1010 provides close to 90 programming questions for students to practice.  These are organized into 11 weekly programming exercises.
+CS1010 provides close to 90 programming questions for students to practice.  These are organized into 9 programming exercises.
 
 ## General Advice
 
@@ -30,7 +30,7 @@ All instructions below are meant to be run on the [PE hosts](environments.md).
 
 Every programming exercise has a unique ID, prefixed with `ex`, and is followed by a two-digit sequence number. 
 
-We use [GitHub Classroom](https://classroom.github.com/classrooms/141557850-cs1010-23-24-s1) for managing the submission (including submissions history) and grading.  You will have one code _repository_ for each exercise.
+We use [GitHub Classroom](https://classroom.github.com/classrooms/154963576-cs1010-23-24-s2) for managing the submission (including submissions history) and grading.  You will have one code _repository_ for each exercise.
 
 The steps for completing a programming assignment/exercise are as follows:
 
@@ -72,7 +72,7 @@ Inside that directory, you should see the following files:
 - Files that end with `.c`, one for each problem/question.  The naming convention is `<problem>.c`.  These are the skeleton C code that you should edit to solve the programming question and the only files that you should change.
 - `inputs` and `outputs` are subdirectories that contain test inputs and test outputs. We use the convention `<problem>.<id>.in` for input test data, and `<problem>.<id>.out` for output test data.  For example, you will see files such as `echo.1.in`, `divide.1.out`, etc.  The expected output for `echo.1.in` is in `echo.1.out`.  You can look at the content of these files if you wish.  You can also edit these files to change the test input and output to modify the test cases.
 - `Makefile`: The configuration for the tool `make` that we use to automate the compilation and testing of the programs.  
-- `test.sh`: A bash script for testing your code.
+- `test.sh`: A bash script for testing your code. (If you see a 'permission denied' message related to this script, run `chmod 755 test.sh` to fix the error first.)
 - `compiler_flags.txt` and `.clang-tidy` are two files used to configure `clang` and `clang-tidy` respectively.  You do not need to edit this.
 - `.gitignore` contains a list of filenames to be ignored by the submission script.
 
