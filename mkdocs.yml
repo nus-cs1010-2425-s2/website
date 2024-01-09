@@ -86,8 +86,7 @@ theme:
     - search.shareg
 
   palette:
-    primary: cs1010ay2324s2
-    accent: cs1010ay2324s2
+    scheme: cs1010ay2324s2
   shortcuts:
     previous: 72 #h
     next: 76 #l

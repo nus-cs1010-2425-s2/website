@@ -26,7 +26,7 @@
         What is a computational problem?  Express a step-by-step solution to a computational problem with a flowchart. 
         [:octicons-arrow-right-24:](notes/02-algo.md)
 
-   - __3. Functions__
+    - __3. Functions__
 
         Write functions that solve simpler sub-problems and then combine the functions to solve higher-level and more complex problems.
         [:octicons-arrow-right-24:](notes/03-func.md)
