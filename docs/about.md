@@ -113,7 +113,7 @@ The summative assessments, on the other hand, are meant to evaluate student lear
 
 ### Absence from Midterm and Practical Exams
 
--   Students who are absent during a practical exam or the midterm test {++ must inform the teaching team (by emailing zhaojin@comp.nus.edu.sg++} with a justification for missing the exam within 24 hours after the end of the exam.  Only medical, academic, and compassionate reasons can be considered (e.g., representing NUS for a sports event is OK; Clashes with another course activity is OK; Attending a concert is not). Documented proofs (e.g., medical certificates, email from the other course instructor) are required.
+-   Students who are absent during a practical exam or the midterm test {++ must email zhaojin@comp.nus.edu.sg ++} with a justification for missing the exam within 24 hours after the end of the exam.  Only medical, academic, and compassionate reasons can be considered (e.g., representing NUS for a sports event is OK; Clashes with another course activity is OK; Attending a concert is not). Documented proofs (e.g., medical certificates, email from the other course instructor) are required.
 -   Being absent without justification during a practical exam or the midterm test will result in 0 marks for the corresponding assessment.
 -   An alternative assessment will be arranged for students who are absent during the midterm or practical exams with valid justification.
 
@@ -163,7 +163,7 @@ CS1010 uses several web applications to manage the content, assessments, and int
 
 -   [**Canvas**](https://canvas.nus.edu.sg/courses/52761/): Announcements, class rosters, surveys, quizzes, grades, and sharing of PDF documents are managed through Canvas.
 -   [**Handbook**](https://nus-cs1010-2324-s2.github.io/website/): Notes, problem sets, programming exercises, and lab guides, are publicly available on the web.
--   [**Piazza**](https://piazza.com/class/lqnguw2qi3vgb): Q & A website that serves as the main forum for discussion about CS1010.
+-   [**Piazza**](https://bit.ly/cs1010-2320-forum): Q & A website that serves as the main forum for discussion about CS1010.
 -   [**GitHub**](https://www.github.com): Contains submitted code repositories and feedback about the code from tutors.
 -   [**Softmark**](https://softmark.comp.nus.edu.sg): Contain written test scripts and feedback about the answers.
 

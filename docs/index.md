@@ -38,7 +38,6 @@
 
     </div>
 
-<!--
     ## Basic C
    <div class="grid cards" markdown>
 
@@ -58,7 +57,7 @@
         [:octicons-arrow-right-24:](notes/07-arithmetic-ops.md)
 
     </div>
--->
+
 <!--
     ## Control Statements
     <div class="grid cards" markdown>
