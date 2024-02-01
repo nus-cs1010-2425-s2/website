@@ -58,7 +58,6 @@
 
     </div>
 
-<!--
     ## Control Statements
     <div class="grid cards" markdown>
 
@@ -89,7 +88,7 @@
 
     </div>
 
-
+<!--
 
     ## Arrays, Pointers, Memory Management
     <div class="grid cards" markdown>
