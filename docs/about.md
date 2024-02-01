@@ -55,9 +55,9 @@ Students entering CS1010 are expected to
 -   Lecture slides will be posted after the class. Note that slides are used as a visual aid to assist me during the lectures. It is not meant as a summary of lectures nor a replacement for lecture notes.
 -   We do not take attendance for the lectures.
 
-### Tutorials / Labs
+### Tutorials
 
--   The weekly 2-hour tutorial / lab sessions (starting Week 3) allow students to interact with the teaching staff in smaller groups.
+-   The weekly 2-hour tutorial sessions (starting Week 3) allow students to interact with the teaching staff in smaller groups.
 -   Activity varies, but in most weeks, students and tutors will discuss the problem sets, participate in hands-on learning activities, work on the programming exercises and explore the thought process and different solutions together.
 -   Attendance will be taken.   Students who cannot attend a session should inform their corresponding tutor.
 -   Students are expected to attend their assigned session.  If there is a strong need to attend another session for a specific week, the student must inform the corresponding tutor.
@@ -71,7 +71,7 @@ Formative assessments in CS1010 include problem sets, programming exercises, and
 
 The summative assessments, on the other hand, are meant to evaluate student learning.  These include two written assessments (the midterm and the final exam) and three practical exams.  These are high-stakes assessments carrying 90% of the total weights.
 
--   **Problem Sets**: At the end of some lesson units, we will provide some exercise questions to make students reflect and practice applying what they have learned in the corresponding unit. These questions are not graded. There is no need to submit answers for grading. They will be discussed and presented during the tutorial sessions.
+-   **Problem Sets**: At the end of some lesson units, we will provide some exercise questions to make students reflect and practice applying what they have learned in the corresponding unit. These questions are not graded. However, please discuss them in forum as much as possible if you are unsure (since similar problems are going to appear in the midterm and final).
 -   {++**Past Year Test Papers**++}: Past year test papers are made available for practice.  These are not graded.  There is no need to submit answers for grading.  Selected questions may be discussed during class.  They can be discussed on Piazza.
 -   **Quizzes**: The online quizzes are released every week after the lecture (Tuesday, 2 PM) and are due one week later. The quizzes are more tightly coupled to the content of the weekly lectures and are meant to help students self-diagnose their understanding of what is taught for that week.  {++You may attempt the quizzes an unlimited number of times.  We will consider only your highest score.++}
 -   **Programming Exercises**: These are programming questions of various difficulty levels that are critical for students to solve, to gain experience, skills, and confidence in solving computational problems with C. Typically students spend more than half of their time in CS1010 on solving these programming exercises. Students should submit them on time to get feedback from their lab tutors.
