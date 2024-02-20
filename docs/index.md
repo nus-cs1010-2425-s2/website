@@ -38,8 +38,9 @@
 
     </div>
 
+
     ## Basic C
-   <div class="grid cards" markdown>
+    <div class="grid cards" markdown>
 
     - __5. First C Program__
 
@@ -57,7 +58,8 @@
         [:octicons-arrow-right-24:](notes/07-arithmetic-ops.md)
 
     </div>
-
+	
+	
     ## Control Statements
     <div class="grid cards" markdown>
 
@@ -87,8 +89,6 @@
         [:octicons-arrow-right-24:](notes/12-invariant.md)
 
     </div>
-
-<!--
 
     ## Arrays, Pointers, Memory Management
     <div class="grid cards" markdown>
@@ -123,14 +123,16 @@
         Representing a string as an array of `char`s
         [:octicons-arrow-right-24:](notes/18-string.md)
 
+<!--
     - __19. Multidimensional Array__ 
 
         Using array of arrays
         [:octicons-arrow-right-24:](notes/19-md-array.md)
 
     </div>
+-->	
 
-
+<!--
     ## Algorithms
     <div class="grid cards" markdown>
 

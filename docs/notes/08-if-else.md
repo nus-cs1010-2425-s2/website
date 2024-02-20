@@ -177,7 +177,7 @@ We could write it as:
 
 ```C title="Code with Empty False Block"
  :
-if (m < x) {
+if (m >= x) {
   m = x;
 } else {
   // do nothing
@@ -190,7 +190,7 @@ The false block is empty, and we could keep our code succinct by removing it alt
 
 ```C title="Skipping Else"
  :
-if (m < x) {
+if (m >= x) {
   m = x;
 }
 cs1010_println_long(m);

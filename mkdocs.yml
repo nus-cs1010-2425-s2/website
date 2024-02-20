@@ -17,12 +17,12 @@ nav:
     - 10. Assertion: "notes/10-assert.md"
     - 11. Loop: "notes/11-loop.md"
     - 12. Invariant: "notes/12-invariant.md"
- #   - 13. Call Stack: "notes/13-call-stack.md"
- #   - 14. Fixed-Length Array: "notes/14-array.md"
- #   - 15. Pointers: "notes/15-pointers.md"
- #   - 16. Call by Reference: "notes/16-call-by-reference.md"
- #   - 17. Heap: "notes/17-heap.md"
- #   - 18. String: "notes/18-string.md"
+    - 13. Call Stack: "notes/13-call-stack.md"
+    - 14. Fixed-Length Array: "notes/14-array.md"
+    - 15. Pointers: "notes/15-pointers.md"
+    - 16. Call by Reference: "notes/16-call-by-reference.md"
+    - 17. Heap: "notes/17-heap.md"
+    - 18. String: "notes/18-string.md"
  #   - 19. Multidimensional Array: "notes/19-md-array.md"
  #   - 20. Efficiency: "notes/20-efficiency.md"
  #   - 21. Searching: "notes/21-search.md"
@@ -58,8 +58,8 @@ nav:
       - Guide to Exercises: "guides/exercises.md"
       - 0. I/O, Types, and Arithmetic: 'exercises/ex00.md'
       - 1. Conditionals: 'exercises/ex01.md'
- #     - 2. Loops: 'exercises/ex02.md'
- #     - 3. Fixed-Length Arrays: 'exercises/ex03.md'
+      - 2. Loops: 'exercises/ex02.md'
+      - 3. Fixed-Length Arrays: 'exercises/ex03.md'
  #     - 4. Dynamic Arrays and Strings: 'exercises/ex04.md'
  #     - 5. Multi-dimensional Arrays: 'exercises/ex05.md'
  #     - 6. Searching and Sorting: 'exercises/ex06.md'
