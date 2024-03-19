@@ -123,16 +123,16 @@
         Representing a string as an array of `char`s
         [:octicons-arrow-right-24:](notes/18-string.md)
 
-<!--
+
     - __19. Multidimensional Array__ 
 
         Using array of arrays
         [:octicons-arrow-right-24:](notes/19-md-array.md)
 
     </div>
--->	
 
-<!--
+
+
     ## Algorithms
     <div class="grid cards" markdown>
 
@@ -167,7 +167,7 @@
         [:octicons-arrow-right-24:](notes/25-queens.md)
 
     </div>
-
+<!--
     ## Intermediate C
     <div class="grid cards" markdown>
 

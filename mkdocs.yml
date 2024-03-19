@@ -23,13 +23,13 @@ nav:
     - 16. Call by Reference: "notes/16-call-by-reference.md"
     - 17. Heap: "notes/17-heap.md"
     - 18. String: "notes/18-string.md"
- #   - 19. Multidimensional Array: "notes/19-md-array.md"
- #   - 20. Efficiency: "notes/20-efficiency.md"
- #   - 21. Searching: "notes/21-search.md"
- #   - 22. Sorting: "notes/22-sort.md"
- #   - 23. Tower of Hanoi: "notes/23-tower.md"
- #   - 24. Permutation: "notes/24-permutation.md"
- #   - 25. N-Queens: "notes/25-queens.md"
+    - 19. Multidimensional Array: "notes/19-md-array.md"
+    - 20. Efficiency: "notes/20-efficiency.md"
+    - 21. Searching: "notes/21-search.md"
+    - 22. Sorting: "notes/22-sort.md"
+    - 23. Tower of Hanoi: "notes/23-tower.md"
+    - 24. Permutation: "notes/24-permutation.md"
+    - 25. N-Queens: "notes/25-queens.md"
  #   - 26. Structure: "notes/26-struct.md"
  #   - 27. Standard I/O: "notes/27-stdio.md"
   - Lab Guides: 
@@ -60,8 +60,8 @@ nav:
       - 1. Conditionals: 'exercises/ex01.md'
       - 2. Loops: 'exercises/ex02.md'
       - 3. Fixed-Length Arrays: 'exercises/ex03.md'
- #     - 4. Dynamic Arrays and Strings: 'exercises/ex04.md'
- #     - 5. Multi-dimensional Arrays: 'exercises/ex05.md'
+      - 4. Dynamic Arrays and Strings: 'exercises/ex04.md'
+      - 5. Multi-dimensional Arrays: 'exercises/ex05.md'
  #     - 6. Searching and Sorting: 'exercises/ex06.md'
  #     - 7. Recursions : 'exercises/ex07.md'
  #     - 8. Struct : 'exercises/ex08.md'
