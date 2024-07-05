@@ -30,8 +30,8 @@ nav:
     - 23. Tower of Hanoi: "notes/23-tower.md"
     - 24. Permutation: "notes/24-permutation.md"
     - 25. N-Queens: "notes/25-queens.md"
- #   - 26. Structure: "notes/26-struct.md"
- #   - 27. Standard I/O: "notes/27-stdio.md"
+    - 26. Structure: "notes/26-struct.md"
+    - 27. Standard I/O: "notes/27-stdio.md"
   - Lab Guides: 
     - Unix:
       - Background: "guides/unix-background.md"
@@ -62,9 +62,9 @@ nav:
       - 3. Fixed-Length Arrays: 'exercises/ex03.md'
       - 4. Dynamic Arrays and Strings: 'exercises/ex04.md'
       - 5. Multi-dimensional Arrays: 'exercises/ex05.md'
- #     - 6. Searching and Sorting: 'exercises/ex06.md'
- #     - 7. Recursions : 'exercises/ex07.md'
- #     - 8. Struct : 'exercises/ex08.md'
+      - 6. Searching and Sorting: 'exercises/ex06.md'
+      - 7. Recursions : 'exercises/ex07.md'
+      - 8. Struct : 'exercises/ex08.md'
   - Readings: "readings.md" 
 
 

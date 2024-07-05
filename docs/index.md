@@ -167,7 +167,7 @@
         [:octicons-arrow-right-24:](notes/25-queens.md)
 
     </div>
-<!--
+
     ## Intermediate C
     <div class="grid cards" markdown>
 
@@ -181,7 +181,7 @@
         Use `printf` and `scanf` and their pitfalls
         [:octicons-arrow-right-24:](notes/27-stdio.md)
     </div>
--->
+
 === ":fontawesome-solid-person-chalkboard: Lab Guide"
 
     ## CS1010 PE
