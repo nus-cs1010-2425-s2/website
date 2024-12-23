@@ -6,9 +6,4 @@
 
 ## Tutors
 
-- Albert Sutiono
-- Govindaraj Roshni Daksha
-- Tram Minh Man
-- Yang Pei
-- Yap Shan Teng
-- Yeo Zhi Shen
+- TBA

@@ -1,4 +1,4 @@
-# NUS CS1010 Handbook for AY23/24 Semester 2
+# NUS CS1010 Handbook for AY24/25 Semester 2
 
 #
 
