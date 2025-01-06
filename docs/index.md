@@ -2,9 +2,20 @@
 
 #
 
-#### :fontawesome-solid-circle-info: &nbsp;Important [General Information](about.md) About CS1010
-#### :fontawesome-solid-people-group: &nbsp;[Teaching Team](team.md)
-#### :fontawesome-solid-calendar-days: &nbsp;[Class Schedule](schedule.md)
+<div class="grid cards" markdown>
+
+- __About CS1010__
+
+    __:fontawesome-solid-circle-info: &nbsp;[Course Policy](about.md)__<br>
+    __:fontawesome-solid-people-group: &nbsp;[Teaching Team](team.md)__<br>
+    __:fontawesome-solid-calendar-days: &nbsp;[Class Schedule](schedule.md)__<br>
+
+- __Websites__
+
+    __:material-forum: &nbsp;[Forum](https://edstem.org/us/courses/70897/discussion)__<br>
+    __:simple-canvas: &nbsp;[Canvas](https://canvas.nus.edu.sg/courses/69892)__<br>
+ 
+</div>
 
 <br>
 
@@ -25,7 +36,7 @@
         
         What is a computational problem?  Express a step-by-step solution to a computational problem with a flowchart. 
         [:octicons-arrow-right-24:](notes/02-algo.md)
-
+<!--
     - __3. Functions__
 
         Write functions that solve simpler sub-problems and then combine the functions to solve higher-level and more complex problems.
@@ -37,7 +48,6 @@
         [:octicons-arrow-right-24:](notes/04-type.md)
 
     </div>
-
 
     ## Basic C
     <div class="grid cards" markdown>
@@ -181,7 +191,7 @@
         Use `printf` and `scanf` and their pitfalls
         [:octicons-arrow-right-24:](notes/27-stdio.md)
     </div>
-
+-->
 === ":fontawesome-solid-person-chalkboard: Lab Guide"
 
     ## CS1010 PE

@@ -1,5 +1,9 @@
 # Vim Tips for CS1010
 
+!!! Warning "Obsolete"
+
+    This tip collection has been replaced with a more comprehensive and better organized collection of [common vim operations](https://nus-cs1010.github.io/2425-s1/guides/vim-operations.html).
+
 I collected some tips on `vim` that I find helpful for CS1010/CS2030 students. 
 
 Prerequisite: You have gone through the basic [quick lessons](vim-quick-lessons.md) and have [set up your vim](vim-setup.md) in your PE account.
@@ -77,8 +81,6 @@ If you repeat the operation ++c++, ++d++, and ++y++, it applies to the whole lin
 - ++y++++y++ yank the whole line
 
 You can add a number before an operation to specify how many times you want to repeat an operation.  So ++5++++d++++d++  deletes 5 lines, ++5++++d++++w++ deletes 5 words, etc.
-
-See the article [Operator, the True Power of `Vim`](http://whileimautomaton.net/2008/11/vimm3/operator) for more details.
 
 ### Swapping Lines
 

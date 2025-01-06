@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -500,24 +500,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#separate-compilation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Separate Compilation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hidden-test-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hidden Test Cases
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#question-1-word" class="md-nav__link">
     <span class="md-ellipsis">
       Question 1: Word
@@ -752,9 +734,14 @@
 <h3 id="prerequisite">Prerequisite</h3>
 <p>You have completed <a href="ex03.html">Exercise 3</a>. </p>
 <h3 id="learning-outcomes">Learning Outcomes</h3>
-<p>Be comfortable writing simple C programs that involve dynamically allocated arrays and strings.</p>
+<ul>
+<li>Be able to distinguish between situations that require fixed-sized arrays and dyanmica size arrays.</li>
+<li>Be comfortable writing simple C programs that involve dynamically allocated arrays.</li>
+<li>Be familiar with common pitfalls with using dynamically allocated memory and know to avoid them (including memory leaks, double free, out-of-bounds access).</li>
+<li>Be familiar creating and manipulating strings as a null-terminated array of <code>char</code> in C.</li>
+</ul>
 <h3 id="deadline">Deadline</h3>
-<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 22 March 2024 (Friday), 2 PM (extended due to PE1) to receive feedback and earn your achievement "badges".</p>
+<p>This is part of the CS1010 formative assessment. Submit before 21 March 2025, 2pm to receive feedback and earn your achievement badges.</p>
 <h3 id="acceptance-link">Acceptance Link</h3>
 <p>The link to accept the exercise is not available publicly.  Visit Canvas for the link.</p>
 <h3 id="concepts-and-difficulty">Concepts and Difficulty</h3>
@@ -846,7 +833,7 @@
 </table>
 <p>^: Questions 3, 5, and  6 serve as in-class exercises during the lab session in Week 8.</p>
 <h3 id="cs1010-io-library">CS1010 I/O Library</h3>
-<p>You may need to use a new collection of functions available in the CS1010 I/O library for this exercise onwards.</p>
+<p>You may need to use a new collection of functions available in the CS1010 I/O library for this exercise onwards.  Please read <a href="../guides/library.html">CS1010 I/O Library Guide</a> for details about how to correctly use the functions.</p>
 <h4 id="reading">Reading</h4>
 <ul>
 <li><code>cs1010_read_size_t</code></li>
@@ -860,11 +847,6 @@
 <ul>
 <li><code>cs1010_print_size_t</code> and <code>cs1010_println_size_t</code></li>
 </ul>
-<h3 id="separate-compilation">Separate Compilation</h3>
-<p>In some questions, you will see that the <code>main</code> function is located in a separate C file, with a <code>-main.c</code> suffix, e.g., <code>length-main.c</code>. The function that you are tasked to write is located in the usual <code>&lt;problem&gt;.c</code> file (e.g., <code>length.c</code>).  </p>
-<p>In these cases, <em>you are not allowed to change the C file that contains the <code>main</code> function.</em></p>
-<h3 id="hidden-test-cases">Hidden Test Cases</h3>
-<p>From this exercise onwards, we may test your code more extensively using additional test cases not included in the skeleton.  You should test your code extensively using your own test cases.</p>
 <h2 id="question-1-word">Question 1: Word</h2>
 <p>Using <code>cs1010_read_word</code>, write a program called <code>word</code> that reads a word from the standard input and prints the word back to the standard output.</p>
 <p>The input is guaranteed to have at least one word.</p>
@@ -1131,18 +1113,14 @@ not found
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code>ooiwt@pe119:~/ex04-ooiwt$ ./subtract
-2
-1
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>ooiwt@pe119:~/ex04-ooiwt$ ./subtract
+2 1
 1
 ooiwt@pe119:~/ex04-ooiwt$ ./subtract
-10
-9
+10 9
 1
 ooiwt@pe119:~/ex04-ooiwt$ ./subtract
-1000000
+1000000 
 1
 999999
 ooiwt@pe119:~/ex04-ooiwt$ ./subtract
@@ -1208,10 +1186,10 @@ ooiwt@pe119:~/ex04-ooiwt$ ./subtract
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

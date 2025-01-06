@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -583,7 +583,7 @@
 <h3 id="learning-outcomes">Learning Outcomes</h3>
 <p>Able to model a problem as a search problem and solve it recursively.</p>
 <h3 id="deadline">Deadline</h3>
-<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 12 April 2024 (Friday), 2 PM  (extended due to PE2) to receive feedback and earn your achievement "badges".</p>
+<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 8 April 2025, 2pm to receive feedback and earn your achievement badges.</p>
 <h3 id="acceptance-link">Acceptance Link</h3>
 <p>The link to accept the exercise is not available publicly.  Visit Canvas for the link.</p>
 <h3 id="concepts-and-difficulty">Concepts and Difficulty</h3>
@@ -663,7 +663,7 @@
 <p>Similar to <code>social</code>, your code would be simpler if you separate the representation of the image from the underlying 2D array.  Writing functions to retrieve, update, and compare the color of a pixel of an image would make your code much simpler and easier to read, write, and debug.</p>
 <p>Your solution must take no more than <span class="arithmatex">\(O(mnq)\)</span> time to be categorized as "Excellent".</p>
 <h2 id="question-2-maze">Question 2: Maze</h2>
-<p>Agent Scully woke up and found herself in the dark.  She figured out that she was in a maze.  She has to find her way out if there is one!</p>
+<p>Luke woke up and found himself trapped in a maze.  He has to find his way out if there is one!</p>
 <p>The maze can be simplified as a grid of (<span class="arithmatex">\(m \times n\)</span>) cells. Each cell can be of the following:</p>
 <ol>
 <li>
@@ -673,25 +673,24 @@
 <p>'.' denotes an empty space.</p>
 </li>
 <li>
-<p>'@' denotes where Scully is currently. It is also an empty space.</p>
+<p>'@' denotes where Luke is currently. It is also an empty space.</p>
 </li>
 </ol>
-<p>Anytime Scully reaches a border cell (a cell in either the top-most or bottom-most row or left-most or right-most column), she escapes the maze and can go save her partner Agent Mulder.  She can only move from one empty space to another adjacent cell in one step.  Two cells are adjacent
-if they share a common edge.</p>
-<p>Scully took CS1010, and she got a concrete plan to seek a way out by trial and error.  She follows <strong>strictly</strong> the following strategy to find a way through the maze starting from her initial position.  At each time step,</p>
+<p>Anytime Luke reaches a border cell (a cell in either the top-most or bottom-most row or left-most or right-most column), he escapes the maze and can go save his friends Han and Leia.  He can only move from one empty space to another adjacent cell in one step.  Two cells are adjacent if they share a common edge.</p>
+<p>Luke took CS1010, and he got a concrete plan to seek a way out by trial and error.  He follows <strong>strictly</strong> the following strategy to find a way through the maze starting from his initial position.  At each time step,</p>
 <ol>
 <li>
-<p>She looks for an empty adjacent cell that has never been visited yet, in the sequence of up/right/down/left to the current cell she is at.  If there is an empty adjacent cell, she moves to that cell.  The cell she moves to is now visited.</p>
+<p>Luke looks for an empty adjacent cell that has never been visited yet, in the sequence of up/right/down/left to the current cell he is at.  If there is an empty adjacent cell, he moves to that cell.  The cell he moves to is now visited.</p>
 </li>
 <li>
-<p>If no empty, unvisited, adjacent cell exists, she backtracks on the path that she comes from, moving one step back, and repeats 1 again.</p>
+<p>If no empty, unvisited, adjacent cell exists, he backtracks on the path that he comes from, moving one step back, and repeats 1 again.</p>
 </li>
 </ol>
-<p>In this way, Scully systematically explores the maze, with no repetitive visit of any cell more than once except when she backtracks.  She will stop when successfully escapes the maze, or finds that there is no way out after backtracking all the way back to the original position.  She is completely trapped within the maze and now must wait for her partner Agent Mulder to come and free her.</p>
+<p>In this way, Luke systematically explores the maze, with no repetitive visit of any cell more than once except when he backtracks.  he will stop when successfully escapes the maze, or finds that there is no way out after backtracking all the way back to the original position.  He is completely trapped within the maze and now must wait for his friends to come and free him.</p>
 <p>Write a program <code>maze.c</code>, that reads from standard input.  First, read two positive integers <span class="arithmatex">\(m\)</span> and <span class="arithmatex">\(n\)</span>, followed by <span class="arithmatex">\(m\)</span> lines of <span class="arithmatex">\(n\)</span> characters in each line that represents the maze setup.  One and only one <code>@</code> will be present in the maze setup.</p>
-<p>The program then prints, to standard output, an animation of <span class="arithmatex">\(k\)</span> iterations. The output should only contain <span class="arithmatex">\(m\)</span> rows with <span class="arithmatex">\(n\)</span> characters in each row, with an additional row at last.  Similarly, you must use <code>#</code> to represent a wall, a <code>.</code> to represent empty space, and <code>@</code> to represent where Scully is at.  After printing the maze, your program prints the number of steps that Scully has made.</p>
+<p>The program then prints, to standard output, an animation of <span class="arithmatex">\(k\)</span> iterations. The output should only contain <span class="arithmatex">\(m\)</span> rows with <span class="arithmatex">\(n\)</span> characters in each row, with an additional row at last.  Similarly, you must use <code>#</code> to represent a wall, a <code>.</code> to represent empty space, and <code>@</code> to represent where Luke is at.  After printing the maze, your program prints the number of steps that Luke has made.</p>
 <p>You should use recursion to explore the maze and look for a way out.</p>
-<p>Here is an example.  The following is the starting position of Scully and the maze.</p>
+<p>Here is an example.  The following is the starting position of Luke and the maze.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -712,7 +711,7 @@ if they share a common edge.</p>
 ###########
 0
 </code></pre></div></td></tr></table></div>
-<p>Scully first moves five steps up:
+<p>Luke first moves five steps up:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -733,7 +732,7 @@ if they share a common edge.</p>
 ###########
 5
 </code></pre></div></td></tr></table></div></p>
-<p>At this point, Scully is stuck since there is no more adjacent empty cell that has not been visited.  Scully then backtracks:
+<p>At this point, Luke is stuck since there is no more adjacent empty cell that has not been visited.  Luke then backtracks:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -754,7 +753,7 @@ if they share a common edge.</p>
 ###########
 10
 </code></pre></div></td></tr></table></div></p>
-<p>Scully then moves down:
+<p>Luke then moves down:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -838,7 +837,7 @@ if they share a common edge.</p>
 ###########
 22
 </code></pre></div></td></tr></table></div>
-<p>Then Scully moves up and left, and she is stuck again.</p>
+<p>Then Luke moves up and left, and he is stuck again.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -859,7 +858,7 @@ if they share a common edge.</p>
 ###########
 29
 </code></pre></div></td></tr></table></div>
-<p>At this point, she backtracks:</p>
+<p>At this point, he backtracks:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -901,7 +900,7 @@ if they share a common edge.</p>
 ###########
 41
 </code></pre></div></td></tr></table></div>
-She backtracks again,</p>
+He backtracks again,</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -922,7 +921,7 @@ She backtracks again,</p>
 ###########
 45
 </code></pre></div></td></tr></table></div>
-<p>This time she found her way out!</p>
+<p>This time he found his way out!</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -943,9 +942,9 @@ She backtracks again,</p>
 ###########
 50
 </code></pre></div></td></tr></table></div>
-<p>It took her a total of 50 steps to exit the maze.</p>
+<p>It took him a total of 50 steps to exit the maze.</p>
 <p>Your solution must take no more than <span class="arithmatex">\(O(mn)\)</span> time to be graded as "Excellent".</p>
-<p><strong>Hint:</strong> You need to strictly follow the described strategy and sequence of exploration. Do not forget to print the initial maze and the final maze.</p>
+<p><strong>Hint:</strong> You need to strictly follow the described strategy and sequence of exploration.  You need to print the initial maze and the final maze to match the expected output.</p>
 <p>We have provided a function <code>print_maze</code> to draw the maze in the skeleton file.</p>
 <h3 id="sample-run">Sample Run</h3>
 <p>You can use the sample program <code>~cs1010/ex07/maze</code> on the given inputs to view the animation.</p>
@@ -1069,10 +1068,10 @@ ooiwt@pe111:~/as08-ooiwt$ walk
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

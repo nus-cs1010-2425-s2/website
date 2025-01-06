@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -826,7 +826,7 @@
 <h3 id="learning-outcomes">Learning Outcomes</h3>
 <p>Be comfortable writing simple C programs that involve conditional statements and logical expressions.</p>
 <h3 id="deadline">Deadline</h3>
-<p>This exercise is part of the CS1010 formative assessment. Submit before 13 February 2024 (Tuesday), 2 PM to receive feedback and earn your achievement "badges".</p>
+<p>This is part of CS1010 formative assessment. Submit before 11 February 2025, 2pm to receive feedback and earn your achievement badges.</p>
 <h3 id="acceptance-link">Acceptance Link</h3>
 <p>The link to accept the exercise is not available publicly.  Visit Canvas for the link.</p>
 <h3 id="concepts-and-difficulty">Concepts and Difficulty</h3>
@@ -1014,6 +1014,7 @@ ooiwt@pe111:~/ex01-ooiwt$ ./sum
 <p>Your program must contain a function called <code>compute_num_of_boxes</code> that computes the minimum number of boxes that Beng needs to pack all the candies into.  The function should take in the number of candies and the maximum number of candies a box can hold as arguments, and return the number of boxes needed.</p>
 <p>Your program then prints, to the standard output, the number of boxes needed.</p>
 <p>For example, if there are 8 candies and each box can hold a maximum of 2 candies, then Beng needs 4 boxes.  If each box can hold a maximum of 3 candies, then only 3 boxes are needed.</p>
+<p>The main function has been given to you in the file <code>candy-main.c</code>.  You should not change this file.  Write your solution in the file <code>candy.c</code>.</p>
 <h3 id="sample-runs_2">Sample Runs</h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1029,12 +1030,18 @@ ooiwt@pe111:~/ex01-ooiwt$ ./candy
 </code></pre></div></td></tr></table></div>
 <h2 id="question-4-triangle">Question 4: Triangle</h2>
 <p>In a triangle, the sum of the length of any two sides is always longer than of the third side.  The area of the triangle with sides <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(c\)</span>, can be computed with Heron's formula:</p>
-<div class="arithmatex">\[\sqrt{s(s-a)(s-b)(s-c)}\]</div>
-<p>where <span class="arithmatex">\(s\)</span> is half of the perimeter:</p>
-<div class="arithmatex">\[s = \frac{a + b + c}{2}\]</div>
-<p>Write a program <code>triangle</code> that reads from standard input three positive integers representing the three sides of a triangle.  The program then either
-- prints, to the standard output, <code>Possible</code> if it is possible to create such a triangle, followed by the area of the triangle; or
-- prints <code>Impossible</code> if it is impossible to create such a triangle.</p>
+<div class="arithmatex">\[\sqrt{s \times x \times y \times z}\]</div>
+<p>where <span class="arithmatex">\(s\)</span> is <span class="arithmatex">\(\frac{1}{16}\)</span> of the perimeter:</p>
+<div class="arithmatex">\[s = \frac{a}{16} + \frac{b}{16} + \frac{c}{16}\]</div>
+<p>and </p>
+<div class="arithmatex">\[x = (b - a) + c\]</div>
+<div class="arithmatex">\[y = (a - b) + c\]</div>
+<div class="arithmatex">\[z = (b - c) + a\]</div>
+<p>Write a program <code>triangle</code> that reads from standard input three positive integers representing the three sides of a triangle.  The program then either</p>
+<ul>
+<li>prints, to the standard output, <code>Possible</code> if it is possible to create such a triangle, followed by the area of the triangle; or</li>
+<li>prints <code>Impossible</code> if it is impossible to create such a triangle.</li>
+</ul>
 <p>For instance, suppose that you are given the three sides of a triangle <code>3 4 5</code>. Then the program prints:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Possible
@@ -1043,7 +1050,12 @@ ooiwt@pe111:~/ex01-ooiwt$ ./candy
 <p>Suppose that you are given the three sides <code>4 4 10</code>. Then the program prints:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Impossible
 </code></pre></div></td></tr></table></div></p>
-<p>Your solution must contain two functions <code>is_possible_triangle</code>, which returns whether the input is a possible triangle, and <code>compute_area</code>, which computes the area of the triangle.</p>
+<p>Your solution must contain two functions <code>is_possible_triangle</code>, which returns whether the input is a possible triangle, and <code>compute_area</code>, which computes the area of the triangle.  </p>
+<p>Hints:</p>
+<ul>
+<li>Pay attention to the type of the parameters for functions <code>is_possible_triangle</code> and <code>compute_area</code>.</li>
+<li>The equations above are presented in a way that reduces that maginitude of the values involved in the computation, to avoid overflow or imprecision.  If you calculate the area in another way, it might lead to a different answer, even if your formulate is mathematically equivalent.</li>
+</ul>
 <h3 id="sample-runs_3">Sample Runs</h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1431,10 +1443,10 @@ ooiwt@pe112:~/ex01-ooiwt$ ./suffix
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

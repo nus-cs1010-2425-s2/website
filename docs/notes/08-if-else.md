@@ -177,7 +177,7 @@ We could write it as:
 
 ```C title="Code with Empty False Block"
  :
-if (m >= x) {
+if (m < x) {
   m = x;
 } else {
   // do nothing
@@ -190,7 +190,7 @@ The false block is empty, and we could keep our code succinct by removing it alt
 
 ```C title="Skipping Else"
  :
-if (m >= x) {
+if (m < x) {
   m = x;
 }
 cs1010_println_long(m);
@@ -355,7 +355,7 @@ So, CS1010 advises you to use the `? :` operator sparingly and only when you kno
 
 ### Comparing Real Numbers
 
-Recall that we said [real numbers cannot be represented exactly in computers](https://nus-cs1010.github.io/1819-s1/04-type/index.html#real-numbers).  Comparing real numbers, therefore, becomes a little trickier in programming.  The `if` statement
+Recall that we said [real numbers cannot be represented exactly in computers](04-type.md).  Comparing real numbers, therefore, becomes a little trickier in programming.  The `if` statement
 
 ```C
 double expected_value = 0.3;

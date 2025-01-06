@@ -31,11 +31,11 @@ After taking CS1010, students should
 
 ## Important Dates
 
--   20 February 2024, Tuesday: Practical Exam 0 (6 - 9 PM)
--   5 March 2024, Tuesday: Midterm Test (10 AM - 12 PM)
--   19 March 2024, Tuesday: Practical Exam 1 (6 - 9 PM)
--   9 April 2024, Tuesday: Practical Exam 2 (6 - 9 PM)
--   30 April 2024, Tuesday: Final Exam (1 - 3 PM)
+-   18 February 2025, Tuesday: Practical Exam 0 (6 - 9 PM)
+-   4 March 2025, Tuesday: Midterm Test (10 AM - 12 PM)
+-   18 March 2025, Tuesday: Practical Exam 1 (6 - 9 PM)
+-   8 April 2025, Tuesday: Practical Exam 2 (6 - 9 PM)
+-   30 April 2025, Tuesday: Final Exam (5 - 7 PM)
 
 Due to coordination with multiple other courses and logistics issues -- the practical exam dates/times are subject to change.  It will be finalized by Week 3 of the semester.
 
@@ -51,7 +51,7 @@ Students entering CS1010 are expected to
 
 -   The weekly 2-hour lectures are typically where you learn about new concepts.   
 -   The lectures closely follow the course notes.  Students are encouraged to read through the notes before the lectures.
--   The lectures will be recorded.  Screencasts of the lectures will be posted online 1-2 days after the lecture. This will be done on a 'best effort' basis.  The screencast is not guaranteed to be available on time, or at all.   Posting of the screencast is meant to help students who attended the lecture to recap the content or to help those who are not able to attend the lecture due to unexpected circumstances. It is not meant to be a replacement for lecture attendance.  Students are encouraged to attend the lectures live so that they can interact and ask questions.
+-   The lectures might not be recorded due to various (e.g., venue / technical) contraints. The recordings, if any, are meant to help students who attended the lecture to recap the content or to help those who are not able to attend the lecture due to unexpected circumstances. It is not meant to be a replacement for lecture attendance.  Students are encouraged to attend the lectures live so that they can interact and ask questions.
 -   Lecture slides will be posted after the class. Note that slides are used as a visual aid to assist me during the lectures. It is not meant as a summary of lectures nor a replacement for lecture notes.
 -   We do not take attendance for the lectures.
 
@@ -72,7 +72,7 @@ Formative assessments in CS1010 include problem sets, programming exercises, and
 The summative assessments, on the other hand, are meant to evaluate student learning.  These include two written assessments (the midterm and the final exam) and three practical exams.  These are high-stakes assessments carrying 90% of the total weights.
 
 -   **Problem Sets**: At the end of some lesson units, we will provide some exercise questions to make students reflect and practice applying what they have learned in the corresponding unit. These questions are not graded. However, please discuss them in forum as much as possible if you are unsure (since similar problems are going to appear in the midterm and final).
--   {++**Past Year Test Papers**++}: Past year test papers are made available for practice.  These are not graded.  There is no need to submit answers for grading.  Selected questions may be discussed during class.  They can be discussed on Piazza.
+-   {++**Past Year Test Papers**++}: Past year test papers are made available for practice.  These are not graded.  There is no need to submit answers for grading.  Selected questions may be discussed during class.  They can be discussed on the forum.
 -   **Quizzes**: The online quizzes are released every week after the lecture (Tuesday, 2 PM) and are due one week later. The quizzes are more tightly coupled to the content of the weekly lectures and are meant to help students self-diagnose their understanding of what is taught for that week.  {++You may attempt the quizzes an unlimited number of times.  We will consider only your highest score.++}
 -   **Programming Exercises**: These are programming questions of various difficulty levels that are critical for students to solve, to gain experience, skills, and confidence in solving computational problems with C. Typically students spend more than half of their time in CS1010 on solving these programming exercises. Students should submit them on time to get feedback from their lab tutors.
 -   **Practical Exams**: Students will be given programming questions to solve within a limited time frame, in an examination setting in SoC computer labs.  This is usually held in the evening or on a Saturday.
@@ -98,24 +98,27 @@ The summative assessments, on the other hand, are meant to evaluate student lear
 -   Students may use AI tools to assist them to complete their formative assessments (quizzes, problem sets, and programming exercises).  The use of AI tools, however, should be moderated and used to help students achieve the learning outcomes of CS1010.  It is pointless to use AI tools to generate answers to formative assessments.
 -   Students should familiarise themselves with the NUS policy [on the use of AI tools](https://libguides.nus.edu.sg/new2nus/acadintegrity#s-lib-ctab-22144949-4) and [the guidelines for using AI tools for academic work](https://libguides.nus.edu.sg/new2nus/acadintegrity#s-lib-ctab-22144949-5)
 
-### Discussion and Plagiarism
+### Collaboration on Programming Exercises
 
--   We encourage discussions among students for programming exercises, but each student should be responsible for writing his/her code and should give credit to others when appropriate.
--   NUS and the School of Computing have a high standard of academic honesty and take any violation seriously. In the context of computing modules, source code plagiarism -- copying code from another source and attributing it as one's code -- is a serious violation. Please read the page Preventing Plagiarism from the school's website to familiarize yourself with the policy.
--   CS1010 adopts a "no mercy" policy when it comes to disciplinary action on plagiarism. Both parties, the student who copied, and the student who allowed others to copy, will be penalized equally.
--   Considering that the programming exercises are meant to be formative and contribute very little to the grade of CS1010, there is no point in plagiarising when solving programming exercises. Doing so would not help students learn and prepare them for the practical exams.
+-   As a key component through which students learn problem-solving and programming skills, the programming exercises are best solved with an individual effort.  
+-   Students are, however, free to collaborate and learn from each other.  If the exercises are solved with the help of others, students should give credit to those who helped them (as part of C comments) as good professional etiquette.
+-   Copy-pasting from collaborators (or other online sources) when solving programming exercises would not help students learn.  Our experience indicates that students whose exercise submissions exhibit high similarity with other students tend to perform poorly in practical exams.
+-   A good rule of thumb to follow is Gilligan Island's Rule: After discussing with others, engage in 30 minutes of mind-numbing activities, before working again on an exercise question without referring to any notes of the discussion.  This approach ensures that the student can reconstruct the solution based on what he/she has understood through the discussion.
 
 ### Late/Missed Submission Policy
 
--   No late submission will be considered for quizzes and programming exercises.  Note that students are allowed to miss up to 10% of the submissions.  
--   Students who have to miss more than 10% of their submissions should email zhaojin@comp.nus.edu.sg with a justification for missing the deadline within 24 hours of the deadline.  Only medical, academic, and compassionate reasons can be considered (e.g., representing NUS for a sports event is OK; Attending a wedding is not). Documented proofs (e.g., medical certificates) are required.
--   Tutors are not obligated to provide feedback on code that are submitted late.
+-   No late submission will be considered for quizzes and programming exercises.
+-   Students are allowed to miss up to 10% of the total marks for each formative assessment.  The 5% weightage for quizzes is calculated with the formula $\min(5, \frac{5x}{0.9\times N})$, where $N$ is the total available marks for quizzes and $x$ is the attained marks by a student.  The 5% weightage for programming exercises is calculated similarly.
+-   Tutors are not obligated to provide feedback on exercise submissions that are late without acceptable justification.
+-   Students who have been approved by the university to be on [LOA](https://www.nus.edu.sg/registrar/administrative-policies-procedures/undergraduate/leave-of-absence) for an extended period (over one week) should discuss their learning and assessment plan with the teaching team separately.  Such students may be given alternative deadlines for assessments.
+-   Students who have been approved by the university to be on [LOA](https://www.nus.edu.sg/registrar/administrative-policies-procedures/undergraduate/leave-of-absence) for an extended period (over one week) should discuss their learning and assessment plan with the teaching team separately.  Such students may be given alternative deadlines for assessments.
 
 ### Absence from Midterm and Practical Exams
 
--   Students who are absent during a practical exam or the midterm test {++ must email zhaojin@comp.nus.edu.sg ++} with a justification for missing the exam within 24 hours after the end of the exam.  Only medical, academic, and compassionate reasons can be considered (e.g., representing NUS for a sports event is OK; Clashes with another course activity is OK; Attending a concert is not). Documented proofs (e.g., medical certificates, email from the other course instructor) are required.
+-   Students who are absent during a practical exam or the midterm test must inform the teaching team by filing a request ticket with a justification for missing the exam within 24 hours after the end of the exam.  Only medical, academic, and compassionate reasons can be considered (e.g., representing NUS for a sports event is OK; Clashes with another course activity is OK; Attending a concert is not). Documented proofs (e.g., medical certificates, an email from the other course instructor) are required.
 -   Being absent without justification during a practical exam or the midterm test will result in 0 marks for the corresponding assessment.
 -   An alternative assessment will be arranged for students who are absent during the midterm or practical exams with valid justification.
+-   Note that there is no second alternative assessment if a student is absent from the alternative assessment.  Students who miss the alternative assessment can file for special consideration at the end of the semester.  Details for filing for special consideration can be found at the NUS Student Portal (look under Special Consideration).
 
 ### Absence from Final Exam
 
@@ -123,15 +126,14 @@ The summative assessments, on the other hand, are meant to evaluate student lear
 
 ## Grading
 
--   CS1010 is not graded using a bell curve. 
+-   CS1010 is not graded using a [bell curve](https://blog.nus.edu.sg/provost/2012/01/20/the-bell-curve/). 
 -   A student will receive the grade he or she deserves, irrespective of how the other students in the class perform.
 -   The number of As and Fs will not be artificially capped.
 -   As such, students should work together and help each other learn, instead of competing with each other for a limited number of As.
-
  
 ## The Teaching Team
 
-You can find the members of [the teaching team here](team.md).
+You can find the members of [the teaching team here](team.md). 
 
 The team is responsible for facilitating your learning in CS1010. Their responsibilities include:
 
@@ -145,12 +147,12 @@ The team is responsible for facilitating your learning in CS1010. Their responsi
 Please note that the following are not handled by the CS1010 teaching team.  We can help to forward your requests to the relevant office but often it is faster if you contact them directly:
 
 -   Allocation of labs and tutorials (This is handled by the SoC UG office, through CourseReg)
--   Management of programming environments, including the PE hosts, VPN, and computer labs (This is handled by the SoC IT Unit. You can contact them here)
+-   Management of programming environments, including the PE hosts, VPN, and computer labs (This is handled by the SoC IT Unit. You can contact them [here](https://rt.comp.nus.edu.sg))
 -   Planning and running the final examination (This is handled centrally with all other exams by the NUS Registrar Office.  You can contact them via examinations@nus.edu.sg);
  
 ## Communication Policy
 
--   Piazza is the preferred platform if you have questions to ask or issues to raise (either publicly to your classmates or privately to the instructors)
+-   The forum is the preferred platform if you have questions to ask or issues to raise (either publicly to your classmates or privately to the instructors)
 -   If you must use email, please send it to the email address zhaojin@comp.nus.edu.sg. 
 -   Only email a specific individual instructor or message the instructor using Canvas if you have matters that are personal and private.
 -   Prefix your email subject with [CS1010]
@@ -161,9 +163,9 @@ Please note that the following are not handled by the CS1010 teaching team.  We 
 
 CS1010 uses several web applications to manage the content, assessments, and interaction with students.
 
--   [**Canvas**](https://canvas.nus.edu.sg/courses/52761/): Announcements, class rosters, surveys, quizzes, grades, and sharing of PDF documents are managed through Canvas.
--   [**Handbook**](https://nus-cs1010-2324-s2.github.io/website/): Notes, problem sets, programming exercises, and lab guides, are publicly available on the web.
--   [**Piazza**](https://bit.ly/cs1010-2320-forum): Q & A website that serves as the main forum for discussion about CS1010.
+-   [**Canvas**](https://canvas.nus.edu.sg/courses/69892): Announcements, class rosters, surveys, quizzes, grades, and sharing of PDF documents are managed through Canvas.
+-   [**Handbook**](https://nus-cs1010-2425-s2.github.io/website/): Notes, problem sets, programming exercises, and lab guides, are publicly available on the web.
+-   [**Forum**](https://edstem.org/us/courses/70897/discussion): Q & A website that serves as the main forum for discussion about CS1010.
 -   [**GitHub**](https://www.github.com): Contains submitted code repositories and feedback about the code from tutors.
 -   [**Softmark**](https://softmark.comp.nus.edu.sg): Contain written test scripts and feedback about the answers.
 
@@ -172,25 +174,23 @@ CS1010 uses several web applications to manage the content, assessments, and int
 
 CS1010 is not an easy course. Students are encouraged to ask questions if they don't understand something or if they are stuck solving a formative assessment question.  Students are encouraged to ask questions during lectures, tutorials, and lab sessions.  Outside of these lessons, there are several ways to do so.
 
--   <b>Piazza</b>:
-    - The best place to get help is on Piazza.  If you have a question, please first check if someone has already asked the same question and if there is an answer.  
-    - Students are expected to monitor Piazza regularly and learn from the interaction happening there.  Often, students asked good questions that can bring new insights to understanding the course materials.
+-   <b>Forum</b>:
+    - The best place to get help is on the forum.  If you have a question, please first check if someone has already asked the same question and if there is an answer.  
+    - Students are expected to monitor the forum regularly and learn from the interaction happening there.  Often, students asked good questions that can bring new insights to understanding the course materials.
     - If your question has not been answered, you can post a question yourself.  Please follow the general etiquette and guidelines of asking questions on Piazza if you do so.
 -   <b>Office Hours</b>:
-    - Course instructors and tutorial instructors have set aside a weekly office hour to meet and answer questions from students, face-to-face.  Students are encouraged to meet with their tutorial instructors during this hour to clarify doubts and ask for help.
-    - Outside of this fixed hour, students can arrange for an appointment to meet with the tutorial instructors.
+    - Students can arrange for an appointment to meet with a specific tutor / instructor by email.
 -   <b>Messaging</b>:
-    - Many lab tutors made themselves available on messaging platforms to answer questions from their students.
-    - Note that lab tutors are not obligated to be available 24/7 to answer questions through messaging.   Each lab tutor is free to set their own policy on when they are available to answer questions via their choice of messaging platforms.
-    - We encourage all Q&A to be done through Piazza so that all students can benefit from the questions and answers, instead of these messaging platforms, which only benefit a subset of students. 
+    - Tutors made themselves available on messaging platforms to answer questions from their students.
+    - Note that tutors are not obligated to be available 24/7 to answer questions through messaging.   Each lab tutor is free to set their own policy on when they are available to answer questions via their choice of messaging platforms.
+    - We encourage all Q&A to be done through the forum so that all students can benefit from the questions and answers, instead of these messaging platforms, which only benefit a subset of students. 
 
- 
 ## Mental Health and Wellness
 
 -   Adjusting to new ways of learning and a new environment at NUS can be challenging, and it may be especially more so for students from diverse backgrounds and circumstances. 
--   If you feel stressed, anxious, depressed, overwhelmed, or just need someone to talk to, you may reach out to the [SoC Student Support Manager](https://www.comp.nus.edu.sg/studentlife/) from the Student Life office or the [NUS University Counselling Services](http://NUS%20University%20Counselling%20Services)
+-   If you feel stressed, anxious, depressed, overwhelmed, or just need someone to talk to, you may reach out to the [SoC Student Support Manager](https://www.comp.nus.edu.sg/studentlife/) from the Student Life office or the [NUS University Counselling Services](https://nus.edu.sg/hwb/ucs/).
 -   You may also approach the CS1010 Teaching Team, who can work with these services to support and accommodate students who need help (e.g., with alternative deadlines).
--   Consider this - As you embark on your university journey with SoC, it's crucial to remember that your goals extend beyond just scoring high grades. While studying is important, equally vital are opportunities for personal growth, forming meaningful connections, enjoying life, and preparing for your future career. It is essential to maintain a healthy balance between academics and mental well-being, recognizing that a few marks should never jeopardize your overall health and well-being.
+-   Consider this -- As you embark on your university journey with SoC, it's crucial to remember that your goals extend beyond just scoring high grades. While studying is important, equally vital are opportunities for personal growth, forming meaningful connections, enjoying life, and preparing for your future career. It is essential to maintain a healthy balance between academics and mental well-being, recognizing that a few marks should never jeopardize your overall health and well-being.
 
  
 ## Expectations
@@ -205,4 +205,3 @@ To maximize the gain out of CS1010, students should commit to
 -   helping each other learn (through discussion and teaching each other) to better understand the course materials and to solve the assessment questions, without providing solutions verbatim for others to copy;
 -   actively participating in lab and tutorial lessons, by asking questions, sharing attempts, and commenting on each others' attempts;
 -   actively asking for guidance and feedback, when feeling lost with what is taught or falling behind.
-

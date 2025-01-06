@@ -1,33 +1,46 @@
 # The CS1010 Programming Environment
 
+![architecture](figures/pe-nodes-architecture/pe-nodes-architecture.001.png)
+<div align="center">Figure 1: The CS1010 Programming Environment.  TL;DR: All work should be done on the PE nodes.  You can access the nodes via `ssh` through lab PCs or your personal devices.  If you need to access them outside SoC, you need to go through SoC VPN.</div>
+
+## OS and Compiler
+
 C is a common programming language.  You can find different implementations of a C compiler on many platforms.  Wikipedia [lists more than 40 different C compilers](https://en.wikipedia.org/wiki/List_of_compilers#C_compilers).  These different compilers support different processor architectures and operating systems and may behave slightly differently as well as support different features of C standards.  It is therefore important for CS1010 to stick to a single platform and single compiler.
 
-Our platform of choice is **Ubuntu 20.04.** using the `clang` compiler (**version 10.0 or later**).
+Our platform of choice is **Ubuntu 20.04.** using the `clang` compiler (**version 12.0 or later**).
 
-The school has provided a list of computing servers for you to use.  You can access them remotely via `ssh` (Secure SHell).  The hosts are named `pe111`, `pe112`, ... , `pe120`.  (`pe` stands for "programming environment").  We will refer to these servers generally as the _PE hosts._
+## PE Hosts
+
+The school has provided a list of computing servers with the above environments for you to use (:material-alpha-a-circle: in Figure 1).  The hosts are named `pe111`, `pe112`, ... , `pe119`.  (`pe` stands for "programming environment").  We will refer to these servers generally as the _PE hosts._
 
 !!! note "pe115 and pe116"
-    For this semester, the two servers `pe115` and `pe116` are not available.
+    For this semester, two servers `pe115` and `pe116` are not available.
 
-You can choose which of the 8 hosts to use.  You share the same home directory across all the hosts (this home directory, however, is different from that of `stu`).
+You can choose which of the seven hosts to use.  You share the same home directory across all the hosts (this home directory, however, is different from that of `stu`).
 
-For simplicity, the following guide uses `pe111` in all examples.  Do keep in mind that you can use other hosts for CS1010 to spread out the load.
+For simplicity, the following guide uses `pe111` in all examples.  Do keep in mind that you can use other PE hosts for CS1010 to spread out the load.
 
-While you could complete your programming assignments on your own computers, the practical exams are done in a controlled environment using servers similar to the PE hosts.  It is therefore advisable for you to familiarize yourself with accessing the PE servers via `ssh` and edit your program with either `vim`.
+## Accessing PE Hosts
 
-## Basic Requirements
+While you could complete your programming assignments on your own computers, the practical exams are done in a controlled environment using exam servers similar to the PE hosts.  It is therefore advisable for you to familiarize yourself with accessing the PE servers via `ssh` and complete all your exercises on PE servers.
 
-1. You need to have an SoC Unix account.  If you do not have one, you can [apply for one online](https://mysoc.nus.edu.sg/~newacct/).
+### Account
+
+Basic requirements:
+
+1. To access the hosts, you need an SoC Unix account.  If you do not have one, you can [apply for one online](https://mysoc.nus.edu.sg/~newacct/).
 
 2. Once you have an account, you need to [activate your access to the PE hosts](https://mysoc.nus.edu.sg/~myacct/services.cgi), which are part of the SoC computer clusters.
 
-3. You need a command line `ssh` client.  Windows 10/11, macOS, and Linux users should already have `ssh` installed by default.  If your OS does come with `ssh` (i.e., it cannot find the `ssh` command when you type `ssh` into your terminal), look for instructions on how to install OpenSSH client on your operating system.
+3. To access PE Hosts from your computer (:material-alpha-c-circle: or :material-alpha-d-circle: in Figure 1) you need
 
-4. You need a [terminal emulator](unix-background.md#what-is-a-terminal).  The default terminal emulator that comes with Windows and Mac supports only basic features.  For Windows 10/11 users, CS1010 recommends either PowerShell (pre-installed) or [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/).  For macOS users, CS1010 recommends [iTerm2](https://iterm2.com/).
+    - a command line `ssh` client.  Windows 10/11, macOS, and Linux users should already have `ssh` installed by default.  If your OS does come with `ssh` (i.e., it cannot find the `ssh` command when you type `ssh` into your terminal), look for instructions on how to install OpenSSH client on your operating system.
+   - a [terminal emulator](unix-background.md#what-is-a-terminal).  The default terminal emulator that comes with Windows and Mac supports only basic features.  For Windows 10/11 users, CS1010 recommends either PowerShell (pre-installed) or [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?ocid=webpdpshare).  For macOS users, CS1010 recommends [iTerm2](https://iterm2.com/).
+   - For older versions of Windows, you can check out [XShell 7](https://www.netsarang.com/en/free-for-home-school/) (free for home/school use), or [PuTTY](https://www.putty.org).  These are GUI-based programs, so the command lines instructions below do not apply.
 
-For older versions of Windows, you can check out [XShell 6](https://www.netsarang.com/products/xsh_overview.html) (free for home/school use), or [PuTTY](https://www.putty.org).  These are GUI-based programs so the command lines instructions below do not apply.
+### The Command to SSH
 
-## The Command to SSH
+You can access them remotely via `ssh` (Secure SHell).
 
 To connect to a remote host, run the following in your terminal on your local computer:
 ```
@@ -45,16 +58,29 @@ After the command above, follow the instructions on the screen.  The first time 
 
 <script id="asciicast-4rtH1KENV6QOdKtlY0T7mce0M" src="https://asciinema.org/a/4rtH1KENV6QOdKtlY0T7mce0M.js" async></script>
 
-## Accessing The PE Hosts from Outside SoC
+### Accessing The PE Hosts from Outside SoC
 
-The PE hosts can only be accessed from within the School of Computing networks.  If you want to access it from outside, you need to connect through SoC VPN.
+The PE hosts can only be accessed from within the School of Computing networks.  If you want to access it from outside, you need to connect through SoC VPN (:material-alpha-d-circle: in Figure 1).
 
-First, you need to set up a Virtual Private Network (VPN) (See [instructions here](https://dochub.comp.nus.edu.sg/cf/guides/network/vpn)).  The staff at `helpdesk@comp.nus.edu.sg` or the IT helpdesk in COM1, Level 1, will be able to help you with setting up if needed.
+First, you need to set up a Virtual Private Network (VPN) (See [instructions here](https://dochub.comp.nus.edu.sg/cf/guides/network/vpn)).  The staff at the IT helpdesk in COM1, Level 1, will be able to help you with setting up if needed.  You can also contact them via the NUS IT RT system at [https://rt.comp.nus.edu.sg](https://rt.comp.nus.edu.sg).
 
 !!! note "SoC VPN vs NUS VPN"
 
     Note that SoC VPN is different from NUS VPN.  Connecting to NUS VPN only allows you access to the NUS internal network, but not the SoC internal network.
 
+### Accessing The PE Hosts from SoC Lab PCs
+
+CS1010 practical exams will be conducted in the programming labs in COM1, COM4, and AS6 using the Ubuntu environment on the lab PCs.  Students are advised to use the lab PCs during regular lab sessions to familiarize themselves with the environment (:material-alpha-b-circle: in Figure 1).  
+
+To access the PE hosts from the lab PCs during lab sessions:
+
+- Boot into Ubuntu if the PC is not already running Ubuntu
+- Log into the PC using the SoC Unix account
+- Launch the terminal and use `ssh` command above.
+
+!!! warning
+    The local home directory on the lab PCs will be cleaned regularly.  _Do not expect that files stored in the lab PCs to be persistent_.  You can copy your files to external drive, to your home directory on the PE hosts, or to a cloud storage.
+    
 ## Copying Files between PE Nodes and Local Computer
 
 Secure copy, or `scp`, is one way to transfer files between the programming environments and your local computer.   `scp` behaves just like `cp` (see [Unix: Essentials](unix-essentials.md)).  The command takes in two arguments, the source and the destination.   The difference is that we use the `<username>@<hostname>:<filename>` notation to specify a file on a remote host.
@@ -97,6 +123,13 @@ cat id_rsa.pub >> ~/.ssh/authorized_keys
 
 Make sure that the permission for `.ssh` both on the local machine and on PE is set to `700` and the files `id_rsa` on the local machine and `authorized_keys` on the remote machine are set to `600`.  Once set up, you need not enter your password every time you run `ssh` or `scp`.  
 
+!!! Tips "For Windows Users"
+    On Windows, the equivalent of `chmod` is `icacls`.  While the default permission should work without you doing anything, but if needed, you can change the permission with
+
+    ```
+    icacls <path> /grant:r "<username>:F"   
+    ```
+
 !!! Tips "Using ssh-copy-id"
     If you have [`ssh-copy-id`](https://www.ssh.com/academy/ssh/copy-id) installed (e.g., this is pre-installed with macOS), you can simplify the above to two steps:
     ```
@@ -108,7 +141,7 @@ Make sure that the permission for `.ssh` both on the local machine and on PE is 
     
 Note that a stable network connection is required to use the PE hosts for a long period without interruption.   If you encounter frequent disconnections while working at home or on campus while connected wirelessly, please make sure that your Wi-Fi signal is strong and that there is no interference from other sources. 
 
-If your connection is disconnected in the middle of editing, `vim` saves the state of the buffer for you.  See the section on [recovery file](vim-tips.md#5-recovery-files) on how to recover your files.
+If your connection is disconnected in the middle of editing, `vim` saves the state of the buffer for you.  See the section on [recovery file](https://nus-cs1010.github.io/2425-s1/guides/vim-operations.html#swap-files) on how to recover your files.
 
 If you experience frequent disconnection, you can consider running `screen`. After logging into a PE host, run:
 
@@ -116,7 +149,7 @@ If you experience frequent disconnection, you can consider running `screen`. Aft
 screen
 ```
 
-You will see some messages, press ++Enter++ to go to the command prompt. You can now use the PE host as usual. In case you are disconnected (e.g., in the middle of editing), you can log into the same PE host again, and run:
+You will see some messages, press ++enter++ to go to the command prompt. You can now use the PE host as usual. In case you are disconnected (e.g., in the middle of editing), you can log into the same PE host again, and run:
 
 ```
 screen -r
@@ -145,8 +178,7 @@ and you get the following error:
 
 3. `Permission denied, please try again`
 
-    You did not enter the correct password or username.  Please use the username and password 
-of your SoC Unix account which you have created here: https://mysoc.nus.edu.sg/~newacct/.
+    You did not enter the correct password or username.  Please use the username and password of your SoC Unix account which you have created here: https://mysoc.nus.edu.sg/~newacct/.
 
     Check that you have entered your username correctly.  It is _case-sensitive_.
 
@@ -156,5 +188,5 @@ of your SoC Unix account which you have created here: https://mysoc.nus.edu.sg/~
 
     This error means that you have successfully connected to the PE hosts, but you have no access to your home directory. 
 
-	This should not happen.  Please send an email with the above error message to helpdesk@comp.nus.edu.sg, including the PE hosts that you
+	This should not happen.  Please submit a IT service request with the above error message via [https://rt.comp.nus.edu.sg](https://rt.comp.nus.edu.sg), including the PE hosts that you
 	connected to with this error and your username.  The system administrator can reset the permission of your home directory for you.

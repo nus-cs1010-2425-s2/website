@@ -2,7 +2,7 @@
 
 ## Lecturer
 
--   Zhao Jin (Senior Lecturer, Computer Science)
+- Zhao Jin (Senior Lecturer, Computer Science)
 
 ## Tutors
 
