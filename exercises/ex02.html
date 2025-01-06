@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -809,9 +809,9 @@
 <h3 id="prerequisite">Prerequisite</h3>
 <p>You have completed <a href="ex01.html">Exercise 1</a>. </p>
 <h3 id="learning-outcomes">Learning Outcomes</h3>
-<p>Be comfortable writing simple C programs that involve loops.</p>
+<p>Be comfortable writing C programs that involve loops.</p>
 <h3 id="deadline">Deadline</h3>
-<p>This exercise is part of the CS1010 formative assessment. Submit before 5 March 2024 (Tuesday), 2 PM to receive feedback and earn your achievement "badges".</p>
+<p>This is part of the CS1010 formative assessment. Submit before 4 March 2025, 2pm to receive feedback and earn your achievement badges.</p>
 <h3 id="acceptance-link">Acceptance Link</h3>
 <p>The link to accept the exercise is not available publicly.  Visit Canvas for the link.</p>
 <h3 id="concepts-and-difficulty">Concepts and Difficulty</h3>
@@ -912,6 +912,7 @@
 </tr>
 </tbody>
 </table>
+<p>^: Questions 6 - 8 serve as in-class exercises during the lab session in Week 5.</p>
 <h3 id="efficiency">Efficiency</h3>
 <p>For <code>prime</code> and <code>pattern</code>, while we do not require an advanced fast algorithm to check for primality testing, your code should not waste time by doing redundant work.  You can use the <code>time</code> command to measure how long it takes to run a command.  E.g.,</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -1004,6 +1005,7 @@ ooiwt@pe112:~/ex02-ooiwt$ ./factor
 even: Y
 </code></pre></div></td></tr></table></div></p>
 <p>where <code>X</code> represents the number of odd digits in <span class="arithmatex">\(n\)</span>, and <code>Y</code> represents the number of even digits in <span class="arithmatex">\(n\)</span>.</p>
+<p>The main function is given to you in the file <code>parity-main.c</code>.  You should not change this file.  You should write your solution in a file called <code>parity.c</code> by replacing the body of the function <code>print_parity</code>.</p>
 <h3 id="sample-runs_2">Sample Runs</h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1235,7 +1237,7 @@ ooiwt@pe113:~/ex02-ooiwt$ ./fibonacci
 <p>For instance, if <span class="arithmatex">\(n\)</span> = 10, then we have the sequence</p>
 <p>10 -&gt; 5 -&gt; 16 -&gt; 8 -&gt; 4 -&gt; 2 -&gt; 1</p>
 <p>The smallest number of steps taken by this process for <span class="arithmatex">\(n\)</span> to reach 1 is called the <em>total stopping time</em>. In the example above, the total stopping time for 10 is 6.</p>
-<p>Write a program <code>collatz.c</code> that reads in two positive integers <span class="arithmatex">\(m\)</span> and <span class="arithmatex">\(n\)</span> from the standard input (<span class="arithmatex">\(m \le n\)</span>) and finds out, among the numbers between <span class="arithmatex">\(m\)</span> to <span class="arithmatex">\(n\)</span>, inclusive, which one has the largest total stopping time. If two numbers have the same total stopping time, we break ties by choosing the larger number as the answer.</p>
+<p>Write a program <code>collatz.c</code> that reads in two positive integers <span class="arithmatex">\(m\)</span> and <span class="arithmatex">\(n\)</span> from the standard input (<span class="arithmatex">\(m \le n\)</span>) and finds out, among the numbers between <span class="arithmatex">\(m\)</span> <del class="critic">to</del> <ins class="critic">and</ins> <span class="arithmatex">\(n\)</span>, inclusive, which one has the largest total stopping time. If two numbers have the same total stopping time, we break ties by choosing the larger number as the answer.</p>
 <p>Your program should print to the standard output, the largest total stopping time, followed by the corresponding number, in two different lines.</p>
 <h3 id="sample-runs_7">Sample Runs</h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1566,10 +1568,10 @@ ooiwt@pe114:~/ex02-ooiwt$ ./pattern
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

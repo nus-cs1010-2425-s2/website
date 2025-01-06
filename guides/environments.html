@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -507,15 +507,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-requirements" class="md-nav__link">
+  <a href="#os-and-compiler" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Requirements
+      OS and Compiler
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#pe-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      PE Hosts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-pe-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing PE Hosts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing PE Hosts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#the-command-to-ssh" class="md-nav__link">
     <span class="md-ellipsis">
       The Command to SSH
@@ -523,13 +551,27 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#accessing-the-pe-hosts-from-outside-soc" class="md-nav__link">
     <span class="md-ellipsis">
       Accessing The PE Hosts from Outside SoC
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-pe-hosts-from-soc-lab-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing The PE Hosts from SoC Lab PCs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -720,15 +762,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-requirements" class="md-nav__link">
+  <a href="#os-and-compiler" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Requirements
+      OS and Compiler
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#pe-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      PE Hosts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-pe-hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing PE Hosts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing PE Hosts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#the-command-to-ssh" class="md-nav__link">
     <span class="md-ellipsis">
       The Command to SSH
@@ -736,13 +806,27 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#accessing-the-pe-hosts-from-outside-soc" class="md-nav__link">
     <span class="md-ellipsis">
       Accessing The PE Hosts from Outside SoC
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-pe-hosts-from-soc-lab-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing The PE Hosts from SoC Lab PCs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -798,33 +882,42 @@
 
 
 <h1 id="the-cs1010-programming-environment">The CS1010 Programming Environment</h1>
+<p><img alt="architecture" src="figures/pe-nodes-architecture/pe-nodes-architecture.001.png" /></p>
+<div align="center">Figure 1: The CS1010 Programming Environment.  TL;DR: All work should be done on the PE nodes.  You can access the nodes via `ssh` through lab PCs or your personal devices.  If you need to access them outside SoC, you need to go through SoC VPN.</div>
+
+<h2 id="os-and-compiler">OS and Compiler</h2>
 <p>C is a common programming language.  You can find different implementations of a C compiler on many platforms.  Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_compilers#C_compilers">lists more than 40 different C compilers</a>.  These different compilers support different processor architectures and operating systems and may behave slightly differently as well as support different features of C standards.  It is therefore important for CS1010 to stick to a single platform and single compiler.</p>
-<p>Our platform of choice is <strong>Ubuntu 20.04.</strong> using the <code>clang</code> compiler (<strong>version 10.0 or later</strong>).</p>
-<p>The school has provided a list of computing servers for you to use.  You can access them remotely via <code>ssh</code> (Secure SHell).  The hosts are named <code>pe111</code>, <code>pe112</code>, ... , <code>pe120</code>.  (<code>pe</code> stands for "programming environment").  We will refer to these servers generally as the <em>PE hosts.</em></p>
+<p>Our platform of choice is <strong>Ubuntu 20.04.</strong> using the <code>clang</code> compiler (<strong>version 12.0 or later</strong>).</p>
+<h2 id="pe-hosts">PE Hosts</h2>
+<p>The school has provided a list of computing servers with the above environments for you to use (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2h-2m0 2h2v2h-2V9Z"/></svg></span> in Figure 1).  The hosts are named <code>pe111</code>, <code>pe112</code>, ... , <code>pe119</code>.  (<code>pe</code> stands for "programming environment").  We will refer to these servers generally as the <em>PE hosts.</em></p>
 <div class="admonition note">
 <p class="admonition-title">pe115 and pe116</p>
-<p>For this semester, the two servers <code>pe115</code> and <code>pe116</code> are not available.</p>
+<p>For this semester, two servers <code>pe115</code> and <code>pe116</code> are not available.</p>
 </div>
-<p>You can choose which of the 8 hosts to use.  You share the same home directory across all the hosts (this home directory, however, is different from that of <code>stu</code>).</p>
-<p>For simplicity, the following guide uses <code>pe111</code> in all examples.  Do keep in mind that you can use other hosts for CS1010 to spread out the load.</p>
-<p>While you could complete your programming assignments on your own computers, the practical exams are done in a controlled environment using servers similar to the PE hosts.  It is therefore advisable for you to familiarize yourself with accessing the PE servers via <code>ssh</code> and edit your program with either <code>vim</code>.</p>
-<h2 id="basic-requirements">Basic Requirements</h2>
+<p>You can choose which of the seven hosts to use.  You share the same home directory across all the hosts (this home directory, however, is different from that of <code>stu</code>).</p>
+<p>For simplicity, the following guide uses <code>pe111</code> in all examples.  Do keep in mind that you can use other PE hosts for CS1010 to spread out the load.</p>
+<h2 id="accessing-pe-hosts">Accessing PE Hosts</h2>
+<p>While you could complete your programming assignments on your own computers, the practical exams are done in a controlled environment using exam servers similar to the PE hosts.  It is therefore advisable for you to familiarize yourself with accessing the PE servers via <code>ssh</code> and complete all your exercises on PE servers.</p>
+<h3 id="account">Account</h3>
+<p>Basic requirements:</p>
 <ol>
 <li>
-<p>You need to have an SoC Unix account.  If you do not have one, you can <a href="https://mysoc.nus.edu.sg/~newacct/">apply for one online</a>.</p>
+<p>To access the hosts, you need an SoC Unix account.  If you do not have one, you can <a href="https://mysoc.nus.edu.sg/~newacct/">apply for one online</a>.</p>
 </li>
 <li>
 <p>Once you have an account, you need to <a href="https://mysoc.nus.edu.sg/~myacct/services.cgi">activate your access to the PE hosts</a>, which are part of the SoC computer clusters.</p>
 </li>
 <li>
-<p>You need a command line <code>ssh</code> client.  Windows 10/11, macOS, and Linux users should already have <code>ssh</code> installed by default.  If your OS does come with <code>ssh</code> (i.e., it cannot find the <code>ssh</code> command when you type <code>ssh</code> into your terminal), look for instructions on how to install OpenSSH client on your operating system.</p>
-</li>
-<li>
-<p>You need a <a href="unix-background.html#what-is-a-terminal">terminal emulator</a>.  The default terminal emulator that comes with Windows and Mac supports only basic features.  For Windows 10/11 users, CS1010 recommends either PowerShell (pre-installed) or <a href="https://apps.microsoft.com/store/detail/windows-terminal/">Windows Terminal</a>.  For macOS users, CS1010 recommends <a href="https://iterm2.com/">iTerm2</a>.</p>
+<p>To access PE Hosts from your computer (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2h-2Z"/></svg></span> or <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h4a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H9m2 2h2v6h-2V9Z"/></svg></span> in Figure 1) you need</p>
+<ul>
+<li>a command line <code>ssh</code> client.  Windows 10/11, macOS, and Linux users should already have <code>ssh</code> installed by default.  If your OS does come with <code>ssh</code> (i.e., it cannot find the <code>ssh</code> command when you type <code>ssh</code> into your terminal), look for instructions on how to install OpenSSH client on your operating system.</li>
+<li>a <a href="unix-background.html#what-is-a-terminal">terminal emulator</a>.  The default terminal emulator that comes with Windows and Mac supports only basic features.  For Windows 10/11 users, CS1010 recommends either PowerShell (pre-installed) or <a href="https://apps.microsoft.com/detail/9n0dx20hk701?ocid=webpdpshare">Windows Terminal</a>.  For macOS users, CS1010 recommends <a href="https://iterm2.com/">iTerm2</a>.</li>
+<li>For older versions of Windows, you can check out <a href="https://www.netsarang.com/en/free-for-home-school/">XShell 7</a> (free for home/school use), or <a href="https://www.putty.org">PuTTY</a>.  These are GUI-based programs, so the command lines instructions below do not apply.</li>
+</ul>
 </li>
 </ol>
-<p>For older versions of Windows, you can check out <a href="https://www.netsarang.com/products/xsh_overview.html">XShell 6</a> (free for home/school use), or <a href="https://www.putty.org">PuTTY</a>.  These are GUI-based programs so the command lines instructions below do not apply.</p>
-<h2 id="the-command-to-ssh">The Command to SSH</h2>
+<h3 id="the-command-to-ssh">The Command to SSH</h3>
+<p>You can access them remotely via <code>ssh</code> (Secure SHell).</p>
 <p>To connect to a remote host, run the following in your terminal on your local computer:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ssh &lt;username&gt;@&lt;hostname&gt;
 </code></pre></div></td></tr></table></div></p>
@@ -835,12 +928,24 @@
 <p>After the command above, follow the instructions on the screen.  The first time you ever connect to <code>pe112.comp.nus.edu.sg</code>, you will be warned that you are connecting to a previously unknown host.  Answer <code>yes</code>.  After that, you will be prompted with your SoC Unix password.  Note that nothing is shown on the screen when your password is being entered.</p>
 <script id="asciicast-4rtH1KENV6QOdKtlY0T7mce0M" src="https://asciinema.org/a/4rtH1KENV6QOdKtlY0T7mce0M.js" async></script>
 
-<h2 id="accessing-the-pe-hosts-from-outside-soc">Accessing The PE Hosts from Outside SoC</h2>
-<p>The PE hosts can only be accessed from within the School of Computing networks.  If you want to access it from outside, you need to connect through SoC VPN.</p>
-<p>First, you need to set up a Virtual Private Network (VPN) (See <a href="https://dochub.comp.nus.edu.sg/cf/guides/network/vpn">instructions here</a>).  The staff at <code>helpdesk@comp.nus.edu.sg</code> or the IT helpdesk in COM1, Level 1, will be able to help you with setting up if needed.</p>
+<h3 id="accessing-the-pe-hosts-from-outside-soc">Accessing The PE Hosts from Outside SoC</h3>
+<p>The PE hosts can only be accessed from within the School of Computing networks.  If you want to access it from outside, you need to connect through SoC VPN (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h4a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H9m2 2h2v6h-2V9Z"/></svg></span> in Figure 1).</p>
+<p>First, you need to set up a Virtual Private Network (VPN) (See <a href="https://dochub.comp.nus.edu.sg/cf/guides/network/vpn">instructions here</a>).  The staff at the IT helpdesk in COM1, Level 1, will be able to help you with setting up if needed.  You can also contact them via the NUS IT RT system at <a href="https://rt.comp.nus.edu.sg">https://rt.comp.nus.edu.sg</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">SoC VPN vs NUS VPN</p>
 <p>Note that SoC VPN is different from NUS VPN.  Connecting to NUS VPN only allows you access to the NUS internal network, but not the SoC internal network.</p>
+</div>
+<h3 id="accessing-the-pe-hosts-from-soc-lab-pcs">Accessing The PE Hosts from SoC Lab PCs</h3>
+<p>CS1010 practical exams will be conducted in the programming labs in COM1, COM4, and AS6 using the Ubuntu environment on the lab PCs.  Students are advised to use the lab PCs during regular lab sessions to familiarize themselves with the environment (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m3 8.5V9a2 2 0 0 0-2-2H9v10h4a2 2 0 0 0 2-2v-1.5c0-.8-.7-1.5-1.5-1.5.8 0 1.5-.7 1.5-1.5M13 15h-2v-2h2v2m0-4h-2V9h2v2Z"/></svg></span> in Figure 1).  </p>
+<p>To access the PE hosts from the lab PCs during lab sessions:</p>
+<ul>
+<li>Boot into Ubuntu if the PC is not already running Ubuntu</li>
+<li>Log into the PC using the SoC Unix account</li>
+<li>Launch the terminal and use <code>ssh</code> command above.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The local home directory on the lab PCs will be cleaned regularly.  <em>Do not expect that files stored in the lab PCs to be persistent</em>.  You can copy your files to external drive, to your home directory on the PE hosts, or to a cloud storage.</p>
 </div>
 <h2 id="copying-files-between-pe-nodes-and-local-computer">Copying Files between PE Nodes and Local Computer</h2>
 <p>Secure copy, or <code>scp</code>, is one way to transfer files between the programming environments and your local computer.   <code>scp</code> behaves just like <code>cp</code> (see <a href="unix-essentials.html">Unix: Essentials</a>).  The command takes in two arguments, the source and the destination.   The difference is that we use the <code>&lt;username&gt;@&lt;hostname&gt;:&lt;filename&gt;</code> notation to specify a file on a remote host.</p>
@@ -868,6 +973,12 @@ You can copy specific files as well.  For instance, to copy the file <code>hello
 </code></pre></div></td></tr></table></div></p>
 <p>Make sure that the permission for <code>.ssh</code> both on the local machine and on PE is set to <code>700</code> and the files <code>id_rsa</code> on the local machine and <code>authorized_keys</code> on the remote machine are set to <code>600</code>.  Once set up, you need not enter your password every time you run <code>ssh</code> or <code>scp</code>.  </p>
 <div class="admonition tips">
+<p class="admonition-title">For Windows Users</p>
+<p>On Windows, the equivalent of <code>chmod</code> is <code>icacls</code>.  While the default permission should work without you doing anything, but if needed, you can change the permission with</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>icacls &lt;path&gt; /grant:r &quot;&lt;username&gt;:F&quot;   
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="admonition tips">
 <p class="admonition-title">Using ssh-copy-id</p>
 <p>If you have <a href="https://www.ssh.com/academy/ssh/copy-id"><code>ssh-copy-id</code></a> installed (e.g., this is pre-installed with macOS), you can simplify the above to two steps:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -877,11 +988,11 @@ ssh-copy-id &lt;username&gt;@pe111.comp.nus.edu.sg
 </div>
 <h2 id="stability-of-network-connection">Stability of Network Connection</h2>
 <p>Note that a stable network connection is required to use the PE hosts for a long period without interruption.   If you encounter frequent disconnections while working at home or on campus while connected wirelessly, please make sure that your Wi-Fi signal is strong and that there is no interference from other sources. </p>
-<p>If your connection is disconnected in the middle of editing, <code>vim</code> saves the state of the buffer for you.  See the section on <a href="vim-tips.html#5-recovery-files">recovery file</a> on how to recover your files.</p>
+<p>If your connection is disconnected in the middle of editing, <code>vim</code> saves the state of the buffer for you.  See the section on <a href="https://nus-cs1010.github.io/2425-s1/guides/vim-operations.html#swap-files">recovery file</a> on how to recover your files.</p>
 <p>If you experience frequent disconnection, you can consider running <code>screen</code>. After logging into a PE host, run:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>screen
 </code></pre></div></td></tr></table></div>
-<p>You will see some messages, press ++Enter++ to go to the command prompt. You can now use the PE host as usual. In case you are disconnected (e.g., in the middle of editing), you can log into the same PE host again, and run:</p>
+<p>You will see some messages, press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to go to the command prompt. You can now use the PE host as usual. In case you are disconnected (e.g., in the middle of editing), you can log into the same PE host again, and run:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>screen -r
 </code></pre></div></td></tr></table></div>
 <p>to resume your previous session.</p>
@@ -902,15 +1013,14 @@ and you get the following error:</p>
 </li>
 <li>
 <p><code>Permission denied, please try again</code></p>
-<p>You did not enter the correct password or username.  Please use the username and password 
-of your SoC Unix account which you have created here: <a href="https://mysoc.nus.edu.sg/~newacct/">https://mysoc.nus.edu.sg/~newacct/</a>.</p>
+<p>You did not enter the correct password or username.  Please use the username and password of your SoC Unix account which you have created here: <a href="https://mysoc.nus.edu.sg/~newacct/">https://mysoc.nus.edu.sg/~newacct/</a>.</p>
 <p>Check that you have entered your username correctly.  It is <em>case-sensitive</em>.</p>
 <p>If you have lost your password, go here: <a href="https://mysoc.nus.edu.sg/~myacct/resetpass.cgi">https://mysoc.nus.edu.sg/~myacct/resetpass.cgi</a></p>
 </li>
 <li>
 <p><code>Could not chdir to home directory /home/o/ooiwt: Permission denied</code></p>
 <p>This error means that you have successfully connected to the PE hosts, but you have no access to your home directory. </p>
-<p>This should not happen.  Please send an email with the above error message to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#64;&#99;&#111;&#109;&#112;&#46;&#110;&#117;&#115;&#46;&#101;&#100;&#117;&#46;&#115;&#103;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#64;&#99;&#111;&#109;&#112;&#46;&#110;&#117;&#115;&#46;&#101;&#100;&#117;&#46;&#115;&#103;</a>, including the PE hosts that you
+<p>This should not happen.  Please submit a IT service request with the above error message via <a href="https://rt.comp.nus.edu.sg">https://rt.comp.nus.edu.sg</a>, including the PE hosts that you
 connected to with this error and your username.  The system administrator can reset the permission of your home directory for you.</p>
 </li>
 </ol>
@@ -1010,10 +1120,10 @@ connected to with this error and your username.  The system administrator can re
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

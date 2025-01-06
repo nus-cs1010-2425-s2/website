@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -649,7 +649,7 @@
 <h3 id="learning-outcomes">Learning Outcomes</h3>
 <p>Be comfortable writing simple C programs that involve 2D arrays.</p>
 <h3 id="deadline">Deadline</h3>
-<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 26 March 2024 (Tuesday), 2 PM to receive feedback and earn your achievement "badges".</p>
+<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 25 March 2025, 2pm to receive feedback and earn your achievement badges.</p>
 <h3 id="acceptance-link">Acceptance Link</h3>
 <p>The link to accept the exercise is not available publicly.  Visit Canvas for the link.</p>
 <h3 id="concepts-and-difficulty">Concepts and Difficulty</h3>
@@ -715,7 +715,7 @@
 </tr>
 </tbody>
 </table>
-<p>^: Questions 2, 3, and 4 serve as in-class exercises during the lab session in Week 9.</p>
+<p>^: Questions 2, 3, and 4 may serve as in-class exercises during the lab session in Week 9.</p>
 <h3 id="cs1010-io-library">CS1010 I/O Library</h3>
 <p>You may need to use a new collection of functions available in the CS1010 I/O library for this exercise onwards.</p>
 <ul>
@@ -723,7 +723,7 @@
 <li><code>cs1010_read_line_array</code></li>
 </ul>
 <h2 id="question-1-add">Question 1: Add</h2>
-<p>Write a program <code>add</code> that reads two 3x3 matrices <span class="arithmatex">\(M\)</span> and <span class="arithmatex">\(N\)</span> from the standard inputs and prints the resulting matrix <span class="arithmatex">\(M + N\)</span> to the standard output.</p>
+<p>Write a program <code>add</code> that reads two 3x3 matrices of integers <span class="arithmatex">\(M\)</span> and <span class="arithmatex">\(N\)</span> from the standard inputs and prints the resulting matrix <span class="arithmatex">\(M + N\)</span> to the standard output.</p>
 <p>For example,</p>
 <p><span class="arithmatex">\(\begin{pmatrix}
 3 &amp; 1 &amp; 2\\
@@ -835,7 +835,7 @@ fails).</p>
 <div class="arithmatex">\[m = \frac{y_2 - y_1}{x_2 - x_1}\]</div>
 <p>be the slope of the line.</p>
 <p>If the line passes through (<span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>), then it passes through (<span class="arithmatex">\(x + 1\)</span>, <span class="arithmatex">\(y + m\)</span>).</p>
-<p>Mathematically, x and y are floating-point numbers.  But, when we draw the line in an image, we have to round them into integers.  This process is called <em>rasterization</em> in computer graphics.</p>
+<p>Mathematically, x and y are floating-point numbers.  But, when we draw the line in an image, we have to round them into integers.  This process is called <em>rasterization</em> in computer graphics.  </p>
 <p>To draw a rasterized straight line, we can then loop through different values of <span class="arithmatex">\(x\)</span>, from <span class="arithmatex">\(x_1\)</span> to <span class="arithmatex">\(x_2\)</span>, and update the corresponding value of <span class="arithmatex">\(y\)</span> (by repeatedly adding <span class="arithmatex">\(m\)</span> every time <span class="arithmatex">\(x\)</span> increments by 1).</p>
 <p>Since <span class="arithmatex">\(y\)</span> is a floating-point number, we round <span class="arithmatex">\(y\)</span> to the nearest integer and draw the line at pixel (<span class="arithmatex">\(x, y\)</span>).  You may find the function <code>round</code> from <code>math.h</code> useful.</p>
 <p>We will draw the output in an image format called PGM.  Each pixel of the image has a value ranging between 0 and 255.  For this question, we draw images with two colors: 0 for the black background and 255 for the white line.</p>
@@ -863,6 +863,9 @@ fails).</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ooiwt@pe101:~$ ./line &lt; inputs/line.3.in | ~cs1010/bin/viu -
 </code></pre></div></td></tr></table></div>
 <p>Note that if your image to too big to fit your terminal, <code>viu</code> will resize your image.</p>
+<p>The output for this question must match <em>exactly</em> the expected output, including new lines and spaces.  Since white spaces are not visible, you can use pipe the output through a Unix tool called <code>sed</code> (similar to onigiri in Exercise 2) to replace spaces with dots:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>./line | sed &#39;s/ /./g&#39;
+</code></pre></div></td></tr></table></div>
 <h3 id="sample-runs">Sample Runs</h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -914,7 +917,9 @@ P2
 011
 </code></pre></div></td></tr></table></div>
 <p>The relation indicates that Person 1 and 2 are friends with each other. Person 0 is not a friend of 1 and 2. </p>
-<p>The example below adds another Person 4, who is a friend of Person 0 and Person 2.
+<p><img align="center;" alt="example" src="figures/ex05-social/ex05-social-0.png" width="150px" /></p>
+<p>The example below adds another person, Person 3, who is a friend of Person 0 and Person 2.</p>
+<p><img align="center," alt="example" src="figures/ex05-social/ex05-social-1.png" width="150px" /></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -922,7 +927,7 @@ P2
 01
 011
 1011
-</code></pre></div></td></tr></table></div></p>
+</code></pre></div></td></tr></table></div>
 <p>Write a program <code>popular</code>, that reads from standard input:</p>
 <ul>
 <li>a positive integer <span class="arithmatex">\(n\)</span>,</li>
@@ -975,7 +980,7 @@ ooiwt@pe119:~/as05-skeleton$ ./popular &lt; inputs/popular.2.in
 <li>Given two people A and B, have they been directly in contact with each other?</li>
 <li>Given two people A and B, is there a common person that they have been in contact with? In other words, is there a third person C, where (i) A and C have been in contact with each other, and (ii) B and C have been in contact with each other?</li>
 </ul>
-<p>We assume that "contact" is a symmetric relation. If A has been in contact with B, then B has been in contact with A too. Because of this, we can represent the contact traces between n people as a lower triangular matrix (using a jagged 2D array). Similar to Question 1, we store each element of the matrix as a char, with '1' representing a contact, and '0' otherwise. The contact traces for <span class="arithmatex">\(n\)</span> people is again an array of <span class="arithmatex">\(n\)</span> strings, each string containing characters of '0' and '1' only. The first row of the matrix is a string of length one; the second row is of length two; the third row, length three, etc. The last character of each string (i.e., the diagonal of the matrix) is 1 since everyone has contact with him/herself.</p>
+<p>We assume that "contact" is a symmetric relation. If A has been in contact with B, then B has been in contact with A too. Because of this, we can represent the contact traces between n people as a lower triangular matrix (using a jagged 2D array). Similar to Question 4, we store each element of the matrix as a char, with '1' representing a contact, and '0' otherwise. The contact traces for <span class="arithmatex">\(n\)</span> people is again an array of <span class="arithmatex">\(n\)</span> strings, each string containing characters of '0' and '1' only. The first row of the matrix is a string of length one; the second row is of length two; the third row, length three, etc. The last character of each string (i.e., the diagonal of the matrix) is 1 since everyone has contact with him/herself.</p>
 <p>Write a program contact, that reads from standard input:</p>
 <ul>
 <li>a positive integer <span class="arithmatex">\(n\)</span>,</li>
@@ -1045,8 +1050,9 @@ no contact
 <p>In this question, we are interested in understanding the social network of a group of people.  Suppose that person A is a friend of person B, then we say that A is connected to B with one hop, or A is one hop away from B. </p>
 <p>Consider a friend of B, say C, who is not a friend of A. So C is a friend of a friend of A. We say that C is two hops away from A, and there is a chain of friendship of 2 hops between A and C (A -&gt; B -&gt; C). </p>
 <p>Suppose there are <span class="arithmatex">\(n\)</span> people, and we know the social network of these <span class="arithmatex">\(n\)</span> people -- i.e., we know who is a friend with whom.  We call the network a social network of degree 1.  Your task is to compute a social network of degree <span class="arithmatex">\(k\)</span>, representing who is connected to whom via a friendship chain of up to <span class="arithmatex">\(k\)</span> hops.</p>
-<p>Similar to Question 1, we assume that friendship is bi-directional -- if A is a friend of B, then B is a friend of A. We represent a social network as a lower triangular matrix (using a jagged 2D array) in the same format as Question 1, where a 1 in Row <span class="arithmatex">\(i\)</span> and Column <span class="arithmatex">\(j\)</span> means Person <span class="arithmatex">\(i\)</span> and Person <span class="arithmatex">\(j\)</span> are friends; 0 otherwise.</p>
-<p>The social network below shows the friendship relations between four people.</p>
+<p>Similar to Question 4, we assume that friendship is bi-directional -- if A is a friend of B, then B is a friend of A. We represent a social network as a lower triangular matrix (using a jagged 2D array) in the same format as Question 4, where a 1 in Row <span class="arithmatex">\(i\)</span> and Column <span class="arithmatex">\(j\)</span> means Person <span class="arithmatex">\(i\)</span> and Person <span class="arithmatex">\(j\)</span> are friends; 0 otherwise.</p>
+<p>The social network below shows the friendship relations between four people: Person 0 is friends with Person 3, Person 1 is friends with Person 2, and Person 2 is friends with Person 3.</p>
+<p><img align="center," alt="example" src="figures/ex05-social/ex05-social-1.png" width="150px" /></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1065,8 +1071,49 @@ no contact
 111
 1111
 </code></pre></div></td></tr></table></div>
+<p>The new 2-hop friendship is shown in red:</p>
+<p><img align="center," alt="example" src="figures/ex05-social/ex05-social-4.png" width="150px" /></p>
+<p>Consider another example (Test Case 8).  Person 2 are friends of 0 and 1.  Person 3 and Person 1 are friends;  Person 4 and Person 0 are friends.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>1
+01
+111
+0101
+10001
+</code></pre></div></td></tr></table></div></p>
+<p><img align="center," alt="example" src="figures/ex05-social/ex05-social-5.png" width="400px" /></p>
+<p>The social network of degree 2 becomes
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>1
+11
+111
+0111
+10101
+</code></pre></div></td></tr></table></div></p>
+<p>The new 2-hop friendship is shown in red:</p>
+<p><img align="center," alt="example" src="figures/ex05-social/ex05-social-6.png" width="400px" /></p>
+<p>There are additional 2-hop connections in the network between Person 2 and Person 4 (through common friend Person 0); Person 0 and Person 1 (through common friend Person 2); and Person 2 and Person 3 (through common friend Person 1).</p>
+<p>The social network of degree 3 becomes
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>1
+11
+111
+1111
+11101
+</code></pre></div></td></tr></table></div></p>
+<p>The new 3-hop friendships are shown in blue:</p>
+<p><img alt="example" src="figures/ex05-social/ex05-social-7.png" width="400px" /></p>
+<p>Person 1 and Person 4 are three-hop friends through either Person 0 or Person 2.  Person 0 and Person 3 are also three-hop friends through Person 1 or Person 2.  Note that Person 3 and Person 4 are NOT 3-hop friends.  They are 4-hop friends through Person 2.</p>
 <p>Write a program <code>social</code>, that reads from standard input two positive integers <span class="arithmatex">\(n\)</span> and <span class="arithmatex">\(k\)</span>, followed by <span class="arithmatex">\(n\)</span> lines of strings consisting of '1' or '0' representing the social network of degree 1 of these <span class="arithmatex">\(n\)</span> people. Print, to the standard output, the social network of degree <span class="arithmatex">\(k\)</span> formed by friendship chains of up to <span class="arithmatex">\(k\)</span> hops.</p>
-<p>The purpose of this question is for you to practice using a jagged 2D array. Hence, you are not allowed to store the input matrix or intermediate matrices using a rectangular array, or you risk being penalized heavily for this question.</p>
 <h3 id="hint">Hint</h3>
 <p>There are many ways to solve this problem. The most straightforward way is to compute the social network formed by a friendship chain of degree <span class="arithmatex">\(i\)</span>, <span class="arithmatex">\(N(i)\)</span>, changing <span class="arithmatex">\(i\)</span> from 1 to <span class="arithmatex">\(k\)</span>.</p>
 <ul>
@@ -1199,10 +1246,10 @@ ooiwt@pe119:~/as05-skeleton$ ./social &lt; inputs/social.3.in
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

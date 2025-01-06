@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -539,13 +539,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#question-4-lexicon" class="md-nav__link">
+  <a href="#question-4-marks" class="md-nav__link">
     <span class="md-ellipsis">
-      Question 4: Lexicon
+      Question 4: Marks
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Question 4: Lexicon">
+    <nav class="md-nav" aria-label="Question 4: Marks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -583,7 +583,7 @@
 <h3 id="learning-outcomes">Learning Outcomes</h3>
 <p>Be comfortable studying properties in the input and apply them to efficiently solve problems.</p>
 <h3 id="deadline">Deadline</h3>
-<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 2 April 2024 (Tuesday), 2 PM to receive feedback and earn your achievement "badges".</p>
+<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 1 April 2025, 2pm to receive feedback and earn your achievement badges.</p>
 <h3 id="acceptance-link">Acceptance Link</h3>
 <p>The link to accept the exercise is not available publicly.  Visit Canvas for the link.</p>
 <h3 id="concepts-and-difficulty">Concepts and Difficulty</h3>
@@ -621,7 +621,7 @@
 </tr>
 <tr>
 <td>4</td>
-<td><a href="#question-4-lexicon">Lexicon</a></td>
+<td><a href="#question-4-marks">Marks</a></td>
 <td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
 <td></td>
 <td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"/></svg></span></td>
@@ -721,30 +721,37 @@ ooiwt@pe119:~/ex06-weitsang$ cat inputs/inversion.3.in
 ooiwt@pe119:~/ex06-weitsang$ ./inversion &lt; inputs/inversion.3.in
 0
 </code></pre></div></td></tr></table></div>
-<h2 id="question-4-lexicon">Question 4: Lexicon</h2>
-<p>Given a lexicon consisting of words that are made up of a set of symbols, we wish to sort them in increasing lexicographical order.  Assume that the order of two symbols is defined, the ordering of two words is defined as follows:</p>
-<ul>
-<li>
-<p>Given two words <span class="arithmatex">\(W_1 = a_0a_1..a_k\)</span> and <span class="arithmatex">\(W_2 = b_0b_1..b_k\)</span> of equal length.  Let <span class="arithmatex">\(i\)</span> be the smallest index where the two words differ, i.e., <span class="arithmatex">\(a_j = b_j\)</span> for <span class="arithmatex">\(j = 0, 1, .., i-1\)</span> and <span class="arithmatex">\(a_i \not = b_i\)</span>.  Then <span class="arithmatex">\(W_1 &lt; W_2\)</span> if <span class="arithmatex">\(a_i &lt; b_i\)</span>.  </p>
-</li>
-<li>
-<p>Given two words <span class="arithmatex">\(W_1 = a_0a_1..a_l\)</span> and <span class="arithmatex">\(W_2 = b_0b_1..b_k\)</span> of different length, with <span class="arithmatex">\(l &lt; k\)</span>, then the ordering pads <span class="arithmatex">\(W_1\)</span> with a special symbol that is smaller than every other symbols, until both <span class="arithmatex">\(W_1\)</span> and <span class="arithmatex">\(W_2\)</span> are of equal length. </p>
-</li>
-</ul>
-<p>For this question, we consider the set of printable ASCII characters, except the white space <code>' '</code>, as the set of symbols in our lexicon.  The ordering of two symbols is defined by the ordering of the ASCII value of the characters.  We can thus use the null character `'\0', with an ASCII value of 0, as the padding symbols.</p>
-<p>For instance, the word <code>ooi</code> is smaller than <code>oops</code>.  The first symbol that differs is at position 2 (the first letter is position 0) and the ASCII code for <code>i</code> is smaller than <code>p</code>.</p>
-<p>As another example, given <code>ooi</code> and <code>ooink</code>, the ordering pad <code>ooi</code> with the null character at position 3, to give the order <code>ooi</code> &lt; <code>ooink</code>.</p>
-<p>Write a program <code>lexicon</code>, that reads from standard input:</p>
+<h2 id="question-4-marks">Question 4: Marks</h2>
+<p>Professor Elm has a list of students and their midterm marks.  The list is sorted according to the names in increasing alphabetical order.  Professor Elm wants to sort the list according to the marks.  Students with the same marks should be ordered according to their names in increasing alphabetical order.</p>
+<p>For example, if the list is:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Annie 80
+Levi  90
+Sasha 80
+Zeke  90
+</code></pre></div></td></tr></table></div></p>
+<p>The sorted list should be:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>80 Annie
+80 Sasha
+90 Levi
+90 Zeke
+</code></pre></div></td></tr></table></div></p>
+<p>Annie and Sasha both have 80 marks, but "Annie" comes before "Sasha" in alphabetical order. Similarly, Levi and Zeke both have 90 marks, but "Levi" comes before "Zeke" in alphabetical order.</p>
+<p>Write a program <code>marks</code> to help Professor Elm with this task.  The program should reads from standard input:</p>
 <ul>
 <li>a positive integer <span class="arithmatex">\(n\)</span>,</li>
-<li>followed by <span class="arithmatex">\(n\)</span> words </li>
+<li>followed by <span class="arithmatex">\(n\)</span> pairs of student names and marks.  Each student name is a word.  The name is followed by the marks, which is a non-negative integer ranging from 0 to 100 inclusive.</li>
 </ul>
 <p>Print, to the standard output, </p>
 <ul>
-<li>the list of words in lexicographical order, one word per line.</li>
+<li>the list of students, one student per line.  Each line should start with the student marks, followed by a space, followed by the name of the student.</li>
 </ul>
-<p>Suppose that <span class="arithmatex">\(k\)</span> symbols are used in the lexicon, and the longest string is of length <span class="arithmatex">\(m\)</span>.  You must solve this problem with the running time of <span class="arithmatex">\(O(m(n + k))\)</span>.</p>
-<p>Solving this in <span class="arithmatex">\(O(mn^2)\)</span> or <span class="arithmatex">\(O(mn \log{n})\)</span> is trivial, and such solution will be marked as "Need Improvement"</p>
+<p>Solve this in <span class="arithmatex">\(O(n)\)</span> time to obtain the "Excellent" badge.  A solution slower than <span class="arithmatex">\(O(n)\)</span> time would be marked as "Need Improvement". </p>
 <h3 id="sample-runs_3">Sample Runs</h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -765,76 +772,26 @@ ooiwt@pe119:~/ex06-weitsang$ ./inversion &lt; inputs/inversion.3.in
 <span class="normal">17</span>
 <span class="normal">18</span>
 <span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span></pre></div></td><td class="code"><div><pre><span></span><code>ooiwt@pe119:~/ex06-skeleton$ cat inputs/lexicon.1.in
-6
-c
-s
-1
-0
-1
-0
-ooiwt@pe119:~/ex06-skeleton$ ./lexicon &lt; inputs/lexicon.1.in
-0
-0
-1
-1
-c
-s
-ooiwt@pe119:~/ex06-skeleton$ cat inputs/lexicon.2.in
-9
-cow
-dog
-cat
-muk
-ant
-bee
-fox
-hen
-for
-ooiwt@pe119:~/ex06-skeleton$ ./lexicon &lt; inputs/lexicon.2.in
-ant
-bee
-cat
-cow
-dog
-for
-fox
-hen
-muk
-ooiwt@pe119:~/ex06-skeleton$ cat inputs/lexicon.3.in
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code>ooiwt@pe119:~/ex06-weitsang$ cat inputs/marks.1.in
 3
-ooi
-oops
-ooink
-ooiwt@pe119:~/ex06-skeleton$ ./lexicon &lt; inputs/lexicon.3.in
-ooi
-ooink
-oops
+Armin 70
+Eren 80
+Mikasa 60
+ooiwt@pe119:~/ex06-weitsang$ ./marks &lt; inputs/marks.1.in
+60 Mikasa
+70 Armin
+80 Eren
+ooiwt@pe119:~/ex06-weitsang$ cat inputs/marks.2.in
+4
+Annie 80
+Levi  90
+Sasha 80
+Zeke  90
+ooiwt@pe119:~/ex06-weitsang$ ./marks &lt; inputs/marks.2.in
+80 Annie
+80 Sasha
+90 Levi
+90 Zeke
 </code></pre></div></td></tr></table></div>
 
 
@@ -894,10 +851,10 @@ oops
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

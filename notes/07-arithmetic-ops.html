@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -573,7 +573,7 @@
 <li><code>-</code> - subtraction (e.g., <code class="highlight"><span class="kt">long</span><span class="w"> </span><span class="n">deducted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">income</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span></code>)</li>
 <li><code>%</code> - remainder (e.g, <code class="highlight"><span class="kt">long</span><span class="w"> </span><span class="n">last_digit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span></code>)</li>
 </ul>
-<p>The <code>+</code>, <code>-</code>, <code>*</code>, and <code>/</code> operators work on both integer types (<code>char</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>long long</code>) and real numbers (<code>float</code>, <code>double</code>).  The module operator <code>%</code> works only on integer types.</p>
+<p>The <code>+</code>, <code>-</code>, <code>*</code>, and <code>/</code> operators work on both integer types (<code>char</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>long long</code>) and real numbers (<code>float</code>, <code>double</code>).  The <del class="critic">module</del> <ins class="critic">remainder</ins> operator <code>%</code> works only on integer types.</p>
 <h2 id="operator-precedence">Operator Precedence</h2>
 <p>We can chain the operations together to form expressions such as:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -619,7 +619,7 @@
 </code></pre></div></td></tr></table></div>
 <p>What is the value of variable <code>c</code> after the operation above?</p>
 <p>Here, we are adding one to the value 255, so <code>c</code> must store the value 256, right?</p>
-<p>It turns out that after the execution above, <code>c</code> contains the value 0.  The variable <code>c</code> is of the type <code>uint8_t</code>, which is the unsigned 8-bit integer.  Being 8-bit, the variable can store values from 0 to 255.  When we add 1 to 255, even though we get the result 256, mathematically, we cannot store 256 in <code>c</code> -- there are not enough bits!  In this case, the value stored is "wrap around", and we get the value 0 instead.</p>
+<p>It turns out that after the execution above, <code>c</code> contains the value 0.  The variable <code>c</code> is of the type <code>uint8_t</code>, which is the unsigned 8-bit integer.  Being 8-bit, the variable can store values from 0 to 255.  When we add 1 to 255, even though we get the result 256, mathematically, we cannot store 256 in <code>c</code> -- there are not enough bits!  In this case, the value stored "wraps around", and we get the value 0 instead.</p>
 <p>The variable <code>c</code> above is unsigned. It gets trickier if <code>c</code> is signed.  In the case of overflowing signed integer, the behavior depends on the compiler and is undefined in the C standard.</p>
 <h3 id="integer-division">Integer Division</h3>
 <p>Now, let's consider the following code:</p>
@@ -627,7 +627,7 @@
 </code></pre></div></td></tr></table></div>
 <p>What is the value of the variable <code>half</code> after the operation above?</p>
 <p>It got to be 1.5, right?</p>
-<p>It turns out that, after executing the code above, the value of <code>half</code> is 1.0.  <img alt="😮" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f62e.svg" title=":open_mouth:" /></p>
+<p>It turns out that, after executing the code above, the value of <code>half</code> is 1.0.  <img alt="😮" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f62e.svg" title=":open_mouth:" /></p>
 <p>To understand this, first, let's see what happens when we assign a floating-point number to an integer type:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.5</span><span class="p">;</span>
 </code></pre></div></td></tr></table></div>
@@ -758,10 +758,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

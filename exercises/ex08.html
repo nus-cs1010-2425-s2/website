@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -614,9 +614,12 @@
 <h3 id="prerequisite">Prerequisite</h3>
 <p>You have completed <a href="ex07.html">Exercise 7</a>. </p>
 <h3 id="learning-outcomes">Learning Outcomes</h3>
-<p>Able to model a problem as a search problem and solve it recursively.</p>
+<ul>
+<li>Able to decompose a complex problem into smaller sub-problems</li>
+<li>Able to use <code>struct</code> to encapsulate data</li>
+</ul>
 <h3 id="deadline">Deadline</h3>
-<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 16 April 2024 (Tuesday), 2 PM to receive feedback and earn your achievement "badges".</p>
+<p>This exercise is part of the CS1010 formative assessment. Submit your solution before 15 April 2025, 2pm to receive feedback and earn your achievement badges.</p>
 <h3 id="acceptance-link">Acceptance Link</h3>
 <p>The link to accept the exercise is not available publicly.  Visit Canvas for the link.</p>
 <h3 id="concepts-and-difficulty">Concepts and Difficulty</h3>
@@ -639,8 +642,7 @@
 </tbody>
 </table>
 <h2 id="question-1-digits">Question 1: Digits</h2>
-<p>We started CS1010 with an assignment question on digits, so it is fitting that we end with one.</p>
-<p>In this assignment, your goal is to write a program that can recognize handwritten digits. This is a classic problem in pattern recognition and machine learning. The state-of-the-art techniques can now achieve a recognition rate of over 99%. We, however, will implement a simple algorithm called the <span class="arithmatex">\(k\)</span>-nearest neighbor algorithm, which has a lower accuracy but is simpler.</p>
+<p>In this exercise, your goal is to write a program that can recognize handwritten digits. This is a classic problem in pattern recognition and machine learning. The state-of-the-art techniques can now achieve a recognition rate of over 99%. We, however, will implement a simple algorithm called the <span class="arithmatex">\(k\)</span>-nearest neighbor algorithm, which has a lower accuracy but is simpler.</p>
 <h3 id="supervised-machine-learning">Supervised Machine Learning</h3>
 <p>The <span class="arithmatex">\(k\)</span>-nearest neighbor algorithm belongs to a category of algorithms called <em>supervised</em> machine learning_ algorithms.  These algorithms teach or train the machine to learn to do something, by showing the machine many samples.  These are called <em>training samples</em>.  After showing the machine a bunch of these training samples, we can then <em>test</em> the machine how well it has learned, by showing the machine some <em>testing samples</em>.</p>
 <p>In our case, we want to train the machine to recognize handwritten digits.  During the training phase, we will present a set of handwritten digits in the form of images (as 2D arrays) to the machine, together with a label indicating which digits it is (i.e., "this picture shows the digit 1, this picture shows the digit 4, etc.").  </p>
@@ -1178,8 +1180,8 @@ In the example above, after eliminating 7, both 2 and 3 are tied for the most co
 </code></pre></div></td></tr></table></div>
 <p>The distances between the test sample and each of the training samples are 101, 120, 162, 174, 173, and 162. The <span class="arithmatex">\(k\)</span> nearest neighbors belong to digits 0, 0, 0, 1, and 1. The most common digit among these neighbors is 0, so we conclude (correctly) that the test sample is digit 0.</p>
 <h3 id="using-struct">Using struct</h3>
-<p>One of the objectives of this assignment is to see if you know how to use <code>struct</code>.</p>
-<p>For this assignment, you should define and use two <code>struct</code>:</p>
+<p>One of the objectives of this exercise is to practice how to use <code>struct</code>.</p>
+<p>There are two opportunities to use <code>struct</code> in this exercise:</p>
 <ul>
 <li>
 <p>a <code>struct digit</code> that encapsulates the 2D array that represents the handwritten digit and its label,</p>
@@ -1188,6 +1190,7 @@ In the example above, after eliminating 7, both 2 and 3 are tied for the most co
 <p>a <code>struct neighbor</code> that encapsulates a neighboring digit and the distance to it.</p>
 </li>
 </ul>
+<p>You can define other struct as needed.</p>
 <h3 id="inputoutput">Input/Output</h3>
 <p>Write a program <code>digits</code> that reads, from the standard input, the following:</p>
 <ul>
@@ -1370,10 +1373,10 @@ ooiwt@pe121:~/cs1010/ex08$ cat inputs/train100.in inputs/test30.in | ./digits
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       
