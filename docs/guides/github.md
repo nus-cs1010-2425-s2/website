@@ -161,7 +161,7 @@ Note that you need to connect with the username `git`.  Do not use your GitHub u
 
 We have created an empty lab for you to test if you can correctly retrieve future lab files from GitHub.  Complete the following steps:
 
-- Click here [https://classroom.github.com/a/oBcJPBQ1](https://classroom.github.com/a/oBcJPBQ1).  You should see a page that looks like the following:
+- Click here [https://classroom.github.com/a/bUOnFX8H](https://classroom.github.com/a/bUOnFX8H).  You should see a page that looks like the following:
 
 ![accept](figures/accept-assignment-demo.png){: style="width:500px"}
 

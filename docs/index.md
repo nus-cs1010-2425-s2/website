@@ -36,7 +36,7 @@
         
         What is a computational problem?  Express a step-by-step solution to a computational problem with a flowchart. 
         [:octicons-arrow-right-24:](notes/02-algo.md)
-<!--
+
     - __3. Functions__
 
         Write functions that solve simpler sub-problems and then combine the functions to solve higher-level and more complex problems.
@@ -48,7 +48,7 @@
         [:octicons-arrow-right-24:](notes/04-type.md)
 
     </div>
-
+<!--
     ## Basic C
     <div class="grid cards" markdown>
 
@@ -206,8 +206,7 @@
 
         We use GitHub Classroom for our labs.  Here is how to link your 
         GitHub account to your PE accounts.
-        [:octicons-arrow-right-24:](guides/github.md)
-    
+        [:octicons-arrow-right-24:](guides/github.md)    
     - __Using `tmate`__
 
         `tmate` is a tool that is useful for sharing terminal with others.
