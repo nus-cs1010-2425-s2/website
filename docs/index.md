@@ -48,7 +48,7 @@
         [:octicons-arrow-right-24:](notes/04-type.md)
 
     </div>
-<!--
+	
     ## Basic C
     <div class="grid cards" markdown>
 
@@ -133,15 +133,12 @@
         Representing a string as an array of `char`s
         [:octicons-arrow-right-24:](notes/18-string.md)
 
-
     - __19. Multidimensional Array__ 
 
         Using array of arrays
         [:octicons-arrow-right-24:](notes/19-md-array.md)
 
     </div>
-
-
 
     ## Algorithms
     <div class="grid cards" markdown>
@@ -150,7 +147,7 @@
 
         Quantify the efficiency of an algorithm with big-O running time.
         [:octicons-arrow-right-24:](notes/20-efficiency.md)
-
+		
     - __21. Searching__ 
 
         How to look for an element in a list.
@@ -191,7 +188,7 @@
         Use `printf` and `scanf` and their pitfalls
         [:octicons-arrow-right-24:](notes/27-stdio.md)
     </div>
--->
+
 === ":fontawesome-solid-person-chalkboard: Lab Guide"
 
     ## CS1010 PE
